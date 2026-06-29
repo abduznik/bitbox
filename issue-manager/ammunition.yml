@@ -1,3 +1,311 @@
+basic_tools:
+- title: '[tool] repeat_string'
+  description: Repeats a string N times
+  signature: 'run(text: str, n: str) -> str'
+  example: repeat_string "ha" "3" -> "hahaha"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] remove_spaces'
+  description: Removes all spaces from a string
+  signature: 'run(text: str) -> str'
+  example: remove_spaces "hello world" -> "helloworld"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] reverse_words'
+  description: Reverses the order of words in a string
+  signature: 'run(text: str) -> str'
+  example: reverse_words "hello world" -> "world hello"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] count_chars'
+  description: Counts the number of characters in a string (excluding spaces)
+  signature: 'run(text: str) -> str'
+  example: count_chars "hello world" -> "10"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_uppercase'
+  description: Checks if a string is all uppercase
+  signature: 'run(text: str) -> str'
+  example: is_uppercase "HELLO" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_lowercase'
+  description: Checks if a string is all lowercase
+  signature: 'run(text: str) -> str'
+  example: is_lowercase "hello" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] swap_case'
+  description: Swaps the case of each character in a string
+  signature: 'run(text: str) -> str'
+  example: swap_case "Hello World" -> "hELLO wORLD"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] remove_vowels'
+  description: Removes all vowels from a string
+  signature: 'run(text: str) -> str'
+  example: remove_vowels "hello world" -> "hll wrld"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] keep_vowels'
+  description: Keeps only the vowels from a string
+  signature: 'run(text: str) -> str'
+  example: keep_vowels "hello world" -> "eoo"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_even'
+  description: Checks if a number is even
+  signature: 'run(n: str) -> str'
+  example: is_even "4" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_odd'
+  description: Checks if a number is odd
+  signature: 'run(n: str) -> str'
+  example: is_odd "3" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] absolute'
+  description: Returns the absolute value of a number
+  signature: 'run(n: str) -> str'
+  example: absolute "-5" -> "5"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] max_of_two'
+  description: Returns the larger of two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: max_of_two "3" "7" -> "7"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] min_of_two'
+  description: Returns the smaller of two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: min_of_two "3" "7" -> "3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] square'
+  description: Returns the square of a number
+  signature: 'run(n: str) -> str'
+  example: square "5" -> "25"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] cube'
+  description: Returns the cube of a number
+  signature: 'run(n: str) -> str'
+  example: cube "3" -> "27"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] celsius_to_kelvin'
+  description: Converts Celsius to Kelvin
+  signature: 'run(celsius: str) -> str'
+  example: celsius_to_kelvin "0" -> "273.15"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] fahrenheit_to_celsius'
+  description: Converts Fahrenheit to Celsius
+  signature: 'run(fahrenheit: str) -> str'
+  example: fahrenheit_to_celsius "212" -> "100.0"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] km_to_miles'
+  description: Converts kilometers to miles
+  signature: 'run(km: str) -> str'
+  example: km_to_miles "10" -> "6.21371"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] miles_to_km'
+  description: Converts miles to kilometers
+  signature: 'run(miles: str) -> str'
+  example: miles_to_km "10" -> "16.0934"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] kg_to_lbs'
+  description: Converts kilograms to pounds
+  signature: 'run(kg: str) -> str'
+  example: kg_to_lbs "10" -> "22.0462"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] lbs_to_kg'
+  description: Converts pounds to kilograms
+  signature: 'run(lbs: str) -> str'
+  example: lbs_to_kg "22" -> "9.97903"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] first_char'
+  description: Returns the first character of a string
+  signature: 'run(text: str) -> str'
+  example: first_char "hello" -> "h"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] last_char'
+  description: Returns the last character of a string
+  signature: 'run(text: str) -> str'
+  example: last_char "hello" -> "o"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] starts_with'
+  description: Checks if a string starts with a given prefix
+  signature: 'run(text: str, prefix: str) -> str'
+  example: starts_with "hello" "he" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] ends_with'
+  description: Checks if a string ends with a given suffix
+  signature: 'run(text: str, suffix: str) -> str'
+  example: ends_with "hello" "lo" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] contains_substring'
+  description: Checks if a string contains a given substring
+  signature: 'run(text: str, substring: str) -> str'
+  example: contains_substring "hello world" "wor" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] replace_char'
+  description: Replaces all occurrences of a character in a string
+  signature: 'run(text: str, old: str, new: str) -> str'
+  example: replace_char "hello" "l" "r" -> "herro"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] remove_char'
+  description: Removes all occurrences of a character from a string
+  signature: 'run(text: str, char: str) -> str'
+  example: remove_char "hello" "l" -> "heo"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] multiply'
+  description: Multiplies two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: multiply "3" "4" -> "12"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] divide'
+  description: Divides two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: divide "10" "3" -> "3.3333333333333335"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] modulo'
+  description: Returns the remainder of dividing two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: modulo "10" "3" -> "1"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] power'
+  description: Raises a number to a power
+  signature: 'run(base: str, exponent: str) -> str'
+  example: power "2" "3" -> "8"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] random_int'
+  description: Generates a random integer between min and max (inclusive)
+  signature: 'run(min_val: str, max_val: str) -> str'
+  example: random_int "1" "10" -> "7"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
 string_tools:
 - title: '[tool] base64_encode'
   description: Encodes a string to Base64
