@@ -1,0 +1,6 @@
+rounds: []
+
+stats:
+  total_loaded: 0
+  total_fired: 0
+  last_fired: null

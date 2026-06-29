@@ -1,0 +1,304 @@
+string_tools:
+  - title: "[tool] base64_encode"
+    description: "Encodes a string to Base64"
+    signature: "run(text: str) -> str"
+    example: 'base64_encode "hello" -> "aGVsbG8="'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] base64_decode"
+    description: "Decodes a Base64 string back to plain text"
+    signature: "run(text: str) -> str"
+    example: 'base64_decode "aGVsbG8=" -> "hello"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] count_vowels"
+    description: "Counts the number of vowels in a string"
+    signature: "run(text: str) -> str"
+    example: 'count_vowels "hello world" -> "3"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] is_anagram"
+    description: "Checks if two strings are anagrams of each other"
+    signature: "run(text1: str, text2: str) -> str"
+    example: 'is_anagram "listen" "silent" -> "True"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] title_case"
+    description: "Converts a string to title case"
+    signature: "run(text: str) -> str"
+    example: 'title_case "hello world" -> "Hello World"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] camel_to_snake"
+    description: "Converts camelCase to snake_case"
+    signature: "run(text: str) -> str"
+    example: 'camel_to_snake "helloWorld" -> "hello_world"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] snake_to_camel"
+    description: "Converts snake_case to camelCase"
+    signature: "run(text: str) -> str"
+    example: 'snake_to_camel "hello_world" -> "helloWorld"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] strip_html"
+    description: "Removes all HTML tags from a string"
+    signature: "run(text: str) -> str"
+    example: 'strip_html "<p>Hello <b>world</b></p>" -> "Hello world"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] caesar_cipher"
+    description: "Encodes a string using a Caesar cipher shift"
+    signature: "run(text: str, shift: str) -> str"
+    example: 'caesar_cipher "hello" "3" -> "khoor"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] levenshtein_distance"
+    description: "Calculates the edit distance between two strings"
+    signature: "run(text1: str, text2: str) -> str"
+    example: 'levenshtein_distance "kitten" "sitting" -> "3"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] word_frequency"
+    description: "Returns each word and how many times it appears in a string"
+    signature: "run(text: str) -> str"
+    example: 'word_frequency "the cat sat on the mat" -> "the: 2, cat: 1, sat: 1, on: 1, mat: 1"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+math_tools:
+  - title: "[tool] is_prime"
+    description: "Checks if a number is prime"
+    signature: "run(n: str) -> str"
+    example: 'is_prime "7" -> "True"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] clamp"
+    description: "Clamps a number between a min and max value"
+    signature: "run(value: str, min_val: str, max_val: str) -> str"
+    example: 'clamp "15" "0" "10" -> "10"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] percentage"
+    description: "Calculates what percentage part is of whole"
+    signature: "run(part: str, whole: str) -> str"
+    example: 'percentage "25" "200" -> "12.5"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] fibonacci"
+    description: "Returns the nth Fibonacci number"
+    signature: "run(n: str) -> str"
+    example: 'fibonacci "10" -> "55"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] roman_to_int"
+    description: "Converts a Roman numeral string to an integer"
+    signature: "run(roman: str) -> str"
+    example: 'roman_to_int "XIV" -> "14"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] int_to_roman"
+    description: "Converts an integer to a Roman numeral string"
+    signature: "run(n: str) -> str"
+    example: 'int_to_roman "14" -> "XIV"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+list_tools:
+  - title: "[tool] flatten_list"
+    description: "Flattens a nested list one level deep (JSON input)"
+    signature: "run(json_list: str) -> str"
+    example: 'flatten_list "[[1,2],[3,4],[5]]" -> "[1, 2, 3, 4, 5]"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] unique_list"
+    description: "Removes duplicates from a list while preserving order (JSON input)"
+    signature: "run(json_list: str) -> str"
+    example: 'unique_list "[1,2,2,3,1,4]" -> "[1, 2, 3, 4]"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] chunk_list"
+    description: "Splits a list into chunks of size n (JSON input)"
+    signature: "run(json_list: str, n: str) -> str"
+    example: 'chunk_list "[1,2,3,4,5]" "2" -> "[[1, 2], [3, 4], [5]]"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] rotate_list"
+    description: "Rotates a list by n positions to the right (JSON input)"
+    signature: "run(json_list: str, n: str) -> str"
+    example: 'rotate_list "[1,2,3,4,5]" "2" -> "[4, 5, 1, 2, 3]"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] zip_lists"
+    description: "Zips two lists into a list of pairs (JSON input)"
+    signature: "run(list1: str, list2: str) -> str"
+    example: 'zip_lists "[1,2,3]" "[4,5,6]" -> "[[1, 4], [2, 5], [3, 6]]"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+crypto_tools:
+  - title: "[tool] generate_password"
+    description: "Generates a random password of a given length"
+    signature: "run(length: str) -> str"
+    example: 'generate_password "16" -> "aB3$xQ9mLp2!rT7k"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] hex_to_rgb"
+    description: "Converts a hex color code to RGB values"
+    signature: "run(hex_color: str) -> str"
+    example: 'hex_to_rgb "#ff5733" -> "255, 87, 51"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] rgb_to_hex"
+    description: "Converts RGB values to a hex color code"
+    signature: "run(r: str, g: str, b: str) -> str"
+    example: 'rgb_to_hex "255" "87" "51" -> "#ff5733"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+utility_tools:
+  - title: "[tool] seconds_to_hms"
+    description: "Converts a number of seconds to h:mm:ss format"
+    signature: "run(seconds: str) -> str"
+    example: 'seconds_to_hms "3661" -> "1:01:01"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] file_size_human"
+    description: "Converts a byte count to a human-readable file size"
+    signature: "run(bytes: str) -> str"
+    example: 'file_size_human "1048576" -> "1.0 MB"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] json_prettify"
+    description: "Pretty prints a JSON string with indentation"
+    signature: "run(json_str: str) -> str"
+    example: 'json_prettify "{\"a\":1}" -> "{\n  \"a\": 1\n}"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] json_minify"
+    description: "Minifies a JSON string by removing whitespace"
+    signature: "run(json_str: str) -> str"
+    example: 'json_minify "{ \"a\": 1 }" -> "{\"a\":1}"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
+
+  - title: "[tool] generate_uuid"
+    description: "Generates a random UUID v4 string"
+    signature: "run() -> str"
+    example: 'generate_uuid -> "3f6b2c1a-8e4d-4b7f-9c2a-1d5e8f3a6b0c"'
+    labels:
+      - good first issue
+      - help wanted
+      - tool request
+    fired: false
