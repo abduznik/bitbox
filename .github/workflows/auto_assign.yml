@@ -25,9 +25,9 @@ jobs:
         contains(toJSON(github.event.comment.body), 'mine') ||
         contains(toJSON(github.event.comment.body), 'want to') ||
         contains(toJSON(github.event.comment.body), 'would like') ||
-        contains(toJSON(github.event.comment.body), 'i\'ll do') ||
+        contains(toJSON(github.event.comment.body), 'will do') ||
         contains(toJSON(github.event.comment.body), 'let me') ||
-        contains(toJSON(github.event.comment.body), 'i can do') ||
+        contains(toJSON(github.event.comment.body), 'can do') ||
         contains(toJSON(github.event.comment.body), 'on it') ||
         contains(toJSON(github.event.comment.body), 'dibs')
       )
