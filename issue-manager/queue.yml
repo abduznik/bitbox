@@ -1,6 +1,50 @@
-rounds: []
-
+rounds:
+- title: '[tool] base64_encode'
+  description: Encodes a string to Base64
+  signature: 'run(text: str) -> str'
+  example: base64_encode "hello" -> "aGVsbG8="
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] base64_decode'
+  description: Decodes a Base64 string back to plain text
+  signature: 'run(text: str) -> str'
+  example: base64_decode "aGVsbG8=" -> "hello"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] count_vowels'
+  description: Counts the number of vowels in a string
+  signature: 'run(text: str) -> str'
+  example: count_vowels "hello world" -> "3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_anagram'
+  description: Checks if two strings are anagrams of each other
+  signature: 'run(text1: str, text2: str) -> str'
+  example: is_anagram "listen" "silent" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: pending
+- title: '[tool] title_case'
+  description: Converts a string to title case
+  signature: 'run(text: str) -> str'
+  example: title_case "hello world" -> "Hello World"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: pending
 stats:
-  total_loaded: 0
-  total_fired: 0
-  last_fired: null
+  total_loaded: 5
+  total_fired: 3
+  last_fired: '2026-06-29T18:28:57.506557+00:00'
