@@ -47,21 +47,23 @@ def list_tools(tools):
     if not tools:
         print("No tools found.")
         return
-    print(f"{'Tool':<25} {'Description'}")
-    print(f"{'----':<25} {'-----------'}")
+    print(f"\n  {len(tools)} tools available\n")
+    print(f"  {'Tool':<25} {'Description'}")
+    print(f"  {'----':<25} {'-----------'}")
     for name in sorted(tools):
         desc = get_description(tools[name])
-        print(f"{name:<25} {desc}")
+        print(f"  {name:<25} {desc}")
+    print()
 
 
 def main():
     tools = discover_tools()
 
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
-        print("Usage: python main.py <tool_name> [args...]")
-        print("       python main.py --list")
+        print("Usage: python bitbox.py <tool_name> [args...]")
+        print("       python bitbox.py --list")
         print()
-        print("Run 'python main.py --list' to see available tools.")
+        print("Run 'python bitbox.py --list' to see available tools.")
         sys.exit(0)
 
     if sys.argv[1] == "--list":
@@ -73,7 +75,7 @@ def main():
 
     if tool_name not in tools:
         print(f"Error: tool '{tool_name}' not found.")
-        print("Run 'python main.py --list' to see available tools.")
+        print("Run 'python bitbox.py --list' to see available tools.")
         sys.exit(1)
 
     module = load_tool(tools[tool_name])
@@ -88,7 +90,7 @@ def main():
     except TypeError:
         params = list(sig.parameters.keys())
         print(f"Error: tool '{tool_name}' expects {len(params)} argument(s): {', '.join(params)}")
-        print(f"Usage: python main.py {tool_name} {' '.join('<' + p + '>' for p in params)}")
+        print(f"Usage: python bitbox.py {tool_name} {' '.join('<' + p + '>' for p in params)}")
         sys.exit(1)
 
     try:
@@ -96,7 +98,7 @@ def main():
         print(result)
     except (IndexError, TypeError):
         print(f"Error: wrong number of arguments for '{tool_name}'.")
-        print(f"Usage: python main.py {tool_name} <args...>")
+        print(f"Usage: python bitbox.py {tool_name} <args...>")
         print(f"Check the tool file for expected arguments: tools/{tool_name}.py")
         sys.exit(1)
     except Exception as e:

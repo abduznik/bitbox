@@ -11,7 +11,7 @@ A community-built collection of tiny Python CLI tools. One file. One function. O
 No install needed. Clone and run.
 
 ```bash
-git clone https://github.com/your-username/bitbox.git
+git clone https://github.com/abduznik/bitbox.git
 cd bitbox
 python bitbox.py --list
 ```
@@ -62,6 +62,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 
 | Name | Tool |
 |------|------|
-| | |
+| [@abduznik](https://github.com/abduznik) | project scaffold, 7 seed tools |
 
-<!-- Add your name here after your first PR is merged! -->
+<!-- Contributors are added automatically after PRs are merged -->
