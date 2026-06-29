@@ -48,11 +48,11 @@ jobs:
           fi
 
           # Check if contributor already exists in README
-          if grep -q "@$AUTHOR" README.md; then
+          if grep -q "\[@$AUTHOR\]" README.md; then
             echo "Contributor @$AUTHOR already in README"
             # Update their tool list if new tool
             if [ -n "$TOOL" ] && ! grep -q "$TOOL" README.md; then
-              sed -i "/| @$AUTHOR/ s| |, $TOOL |" README.md
+              sed -i "/\[@$AUTHOR\]/ s/ *|$/ $TOOL |/" README.md
               echo "Added tool $TOOL to existing contributor $AUTHOR"
             fi
           else
