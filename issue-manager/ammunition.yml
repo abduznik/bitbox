@@ -582,3 +582,469 @@ utility_tools:
   - help wanted
   - tool request
   fired: false
+
+date_time:
+- title: '[tool] current_timestamp'
+  description: Returns the current Unix timestamp in seconds
+  signature: run() -> str
+  example: current_timestamp -> "1719705600"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] timestamp_to_date'
+  description: Converts a Unix timestamp to a human-readable date string
+  signature: 'run(timestamp: str) -> str'
+  example: timestamp_to_date "1719705600" -> "2024-06-30 00:00:00"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] date_to_timestamp'
+  description: Converts a date string (YYYY-MM-DD) to a Unix timestamp
+  signature: 'run(date_str: str) -> str'
+  example: date_to_timestamp "2024-06-30" -> "1719705600"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] days_between'
+  description: Calculates the number of days between two dates (YYYY-MM-DD)
+  signature: 'run(date1: str, date2: str) -> str'
+  example: days_between "2024-01-01" "2024-06-30" -> "181"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] current_utc'
+  description: Returns the current UTC date and time as an ISO 8601 string
+  signature: run() -> str
+  example: current_utc -> "2024-06-30T12:00:00+00:00"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_leap_year'
+  description: Checks whether a given year is a leap year
+  signature: 'run(year: str) -> str'
+  example: is_leap_year "2024" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] week_of_year'
+  description: Returns the ISO week number (1-53) for a given date
+  signature: 'run(date_str: str) -> str'
+  example: week_of_year "2024-06-30" -> "26"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] day_of_week'
+  description: Returns the day of the week for a given date (YYYY-MM-DD)
+  signature: 'run(date_str: str) -> str'
+  example: day_of_week "2024-06-30" -> "Sunday"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+validation:
+- title: '[tool] is_email'
+  description: Validates whether a string has a basic email format
+  signature: 'run(text: str) -> str'
+  example: is_email "user@example.com" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_url'
+  description: Checks whether a string is a valid HTTP/HTTPS URL
+  signature: 'run(text: str) -> str'
+  example: is_url "https://example.com" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_ipv4'
+  description: Validates whether a string is a valid IPv4 address
+  signature: 'run(text: str) -> str'
+  example: is_ipv4 "192.168.1.1" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_credit_card'
+  description: Validates a credit card number using the Luhn algorithm
+  signature: 'run(text: str) -> str'
+  example: is_credit_card "4111111111111111" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_uuid'
+  description: Checks whether a string is a valid UUID format
+  signature: 'run(text: str) -> str'
+  example: is_uuid "550e8400-e29b-41d4-a716-446655440000" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_iso_date'
+  description: Validates whether a string is a valid ISO 8601 date (YYYY-MM-DD)
+  signature: 'run(text: str) -> str'
+  example: is_iso_date "2024-06-30" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_integer'
+  description: Checks whether a string represents a valid integer
+  signature: 'run(text: str) -> str'
+  example: is_integer "-42" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_alphanumeric'
+  description: Checks whether a string contains only letters and digits
+  signature: 'run(text: str) -> str'
+  example: is_alphanumeric "hello123" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+encoding_hashing:
+- title: '[tool] md5_hash'
+  description: Computes the MD5 hex digest of a string
+  signature: 'run(text: str) -> str'
+  example: md5_hash "hello" -> "5d41402abc4b2a76b9719d911017c592"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] sha256_hash'
+  description: Computes the SHA-256 hex digest of a string
+  signature: 'run(text: str) -> str'
+  example: sha256_hash "hello" -> "2cf24dba5fb0a30e26e83b2ac5b9e29e1618c90837c5534c2e2ab4f55e16b1e"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] sha1_hash'
+  description: Computes the SHA-1 hex digest of a string
+  signature: 'run(text: str) -> str'
+  example: sha1_hash "hello" -> "aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] url_encode'
+  description: Percent-encodes a string for use in URLs
+  signature: 'run(text: str) -> str'
+  example: url_encode "hello world&foo" -> "hello+world%26foo"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] url_decode'
+  description: Decodes a percent-encoded URL string
+  signature: 'run(text: str) -> str'
+  example: url_decode "hello+world" -> "hello world"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] html_escape'
+  description: Escapes HTML special characters (<, >, &, quotes)
+  signature: 'run(text: str) -> str'
+  example: html_escape "<div>" -> "&lt;div&gt;"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] html_unescape'
+  description: Converts HTML entities back to their character equivalents
+  signature: 'run(text: str) -> str'
+  example: html_unescape "&lt;div&gt;" -> "<div>"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+text_analysis:
+- title: '[tool] char_frequency'
+  description: Returns the frequency of each character in a string as JSON
+  signature: 'run(text: str) -> str'
+  example: char_frequency "hello" -> '{"h": 1, "e": 1, "l": 2, "o": 1}'
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] longest_word'
+  description: Finds the longest word in a given text
+  signature: 'run(text: str) -> str'
+  example: longest_word "the quick brown fox" -> "quick"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] shortest_word'
+  description: Finds the shortest word in a given text
+  signature: 'run(text: str) -> str'
+  example: shortest_word "the quick brown fox" -> "the"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] sentence_count'
+  description: Counts the number of sentences in text (by . ! ?)
+  signature: 'run(text: str) -> str'
+  example: sentence_count "Hello. How are you? Fine!" -> "3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] reading_time'
+  description: Estimates reading time in minutes (assuming 200 wpm)
+  signature: 'run(text: str) -> str'
+  example: reading_time "400 words of text here" -> "2"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] line_count'
+  description: Counts the number of lines in a string
+  signature: 'run(text: str) -> str'
+  example: line_count "line1\nline2\nline3" -> "3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] word_wrap'
+  description: Wraps text to a specified maximum line width
+  signature: 'run(text: str, width: str) -> str'
+  example: word_wrap "hello world foo bar" "10" -> "hello\nworld foo\nbar"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+data_formats:
+- title: '[tool] csv_to_json'
+  description: Converts CSV text (with header row) to a JSON array of objects
+  signature: 'run(csv_text: str) -> str'
+  example: csv_to_json "name,age\nAlice,30" -> '[{"name":"Alice","age":"30"}]'
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] json_keys'
+  description: Lists the top-level keys of a JSON object
+  signature: 'run(json_str: str) -> str'
+  example: json_keys '{"a":1,"b":2}' -> '["a", "b"]'
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] xml_escape'
+  description: Escapes special characters for XML content
+  signature: 'run(text: str) -> str'
+  example: xml_escape "foo & bar <baz>" -> "foo &amp; bar &lt;baz&gt;"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] ini_get'
+  description: Parses INI content and returns the value for a section.key
+  signature: 'run(ini_content: str, key: str) -> str'
+  example: ini_get "[server]\nport = 8080" "server.port" -> "8080"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] env_parse'
+  description: Parses a .env-style string and returns all key=value pairs as JSON
+  signature: 'run(env_content: str) -> str'
+  example: env_parse "FOO=bar\nBAZ=qux" -> '{"FOO": "bar", "BAZ": "qux"}'
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+file_path:
+- title: '[tool] file_extension'
+  description: Extracts the file extension from a file path
+  signature: 'run(path: str) -> str'
+  example: file_extension "photo.JPG" -> ".jpg"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] file_stem'
+  description: Returns the filename without its extension
+  signature: 'run(path: str) -> str'
+  example: file_stem "/home/user/photo.tar.gz" -> "photo.tar"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] path_join'
+  description: Joins multiple path segments into one normalized path
+  signature: 'run(*args) -> str'
+  example: path_join "/home/user" "docs" "file.txt" -> "/home/user/docs/file.txt"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] path_parent'
+  description: Returns the parent directory of a given path
+  signature: 'run(path: str) -> str'
+  example: path_parent "/home/user/docs/file.txt" -> "/home/user/docs"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] path_normalize'
+  description: Normalizes a file path (resolves .. and . segments)
+  signature: 'run(path: str) -> str'
+  example: path_normalize "/home/user/../user/./docs" -> "/home/user/docs"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] path_basename'
+  description: Returns the final component of a file path
+  signature: 'run(path: str) -> str'
+  example: path_basename "/home/user/docs/file.txt" -> "file.txt"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+conversion:
+- title: '[tool] binary_to_decimal'
+  description: Converts a binary string to its decimal integer value
+  signature: 'run(binary: str) -> str'
+  example: binary_to_decimal "1010" -> "10"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] decimal_to_binary'
+  description: Converts a decimal integer to its binary string representation
+  signature: 'run(n: str) -> str'
+  example: decimal_to_binary "10" -> "1010"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] hex_to_decimal'
+  description: Converts a hexadecimal string to its decimal integer value
+  signature: 'run(hex_str: str) -> str'
+  example: hex_to_decimal "ff" -> "255"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] decimal_to_hex'
+  description: Converts a decimal integer to its hexadecimal string
+  signature: 'run(n: str) -> str'
+  example: decimal_to_hex "255" -> "ff"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] octal_to_decimal'
+  description: Converts an octal string to its decimal integer value
+  signature: 'run(octal: str) -> str'
+  example: octal_to_decimal "77" -> "63"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+
+math_extra:
+- title: '[tool] factorial'
+  description: Computes the factorial of a non-negative integer
+  signature: 'run(n: str) -> str'
+  example: factorial "5" -> "120"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] gcd'
+  description: Finds the greatest common divisor of two integers
+  signature: 'run(a: str, b: str) -> str'
+  example: gcd "12" "8" -> "4"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] lcm'
+  description: Finds the least common multiple of two integers
+  signature: 'run(a: str, b: str) -> str'
+  example: lcm "4" "6" -> "12"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_perfect_square'
+  description: Checks whether a number is a perfect square
+  signature: 'run(n: str) -> str'
+  example: is_perfect_square "16" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
