@@ -69,3 +69,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@rdhadge](https://github.com/rdhadge) | title_case, repeat_string |
 
 <!-- Contributors are added automatically after PRs are merged -->
+
