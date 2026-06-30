@@ -16,64 +16,52 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get contributor info
-        id: info
+      - name: Update README and create PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           PR_NUM=${{ github.event.pull_request.number }}
           REPO=${{ github.repository }}
           AUTHOR=${{ github.event.pull_request.user.login }}
-          PR_BODY=$(gh pr view $PR_NUM --repo $REPO --json body -q '.body')
 
-          # Extract tool name from PR title (format: [tool] tool_name)
+          # Extract tool name from PR title
           TOOL=$(echo "${{ github.event.pull_request.title }}" | grep -oP '\[tool\]\s*\K\S+' || echo "")
 
-          # Check if PR body mentions closing an issue
-          ISSUE_NUM=$(echo "$PR_BODY" | grep -oP '(?i)closes\s+#\K\d+' || echo "")
-
-          # Get the tool file from the PR if not found in title
           if [ -z "$TOOL" ]; then
             TOOL=$(gh pr diff $PR_NUM --repo $REPO | grep -oP '^\+\+\+ b/tools/\K[^.]+' | head -1 || echo "")
           fi
-
-          echo "author=$AUTHOR" >> $GITHUB_OUTPUT
-          echo "tool=$TOOL" >> $GITHUB_OUTPUT
-
-      - name: Update README
-        run: |
-          AUTHOR="${{ steps.info.outputs.author }}"
-          TOOL="${{ steps.info.outputs.tool }}"
 
           if [ -z "$AUTHOR" ]; then
             echo "No author found, skipping"
             exit 0
           fi
 
-          # Check if contributor already exists in README
+          BRANCH="contributor/${AUTHOR}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+
+          # Update README
           if grep -q "\[@$AUTHOR\]" README.md; then
-            echo "Contributor @$AUTHOR already in README"
-            # Update their tool list if new tool
             if [ -n "$TOOL" ] && ! grep -q "$TOOL" README.md; then
               sed -i "/\[@$AUTHOR\]/ s/ *|$/ $TOOL |/" README.md
-              echo "Added tool $TOOL to existing contributor $AUTHOR"
             fi
           else
-            # Add new contributor row before the closing comment
             if [ -n "$TOOL" ]; then
               NEW_ROW="| [@${AUTHOR}](https://github.com/${AUTHOR}) | ${TOOL} |"
             else
               NEW_ROW="| [@${AUTHOR}](https://github.com/${AUTHOR}) | contributor |"
             fi
             sed -i "/^<!-- Contributors/i\\$NEW_ROW" README.md
-            echo "Added new contributor $AUTHOR"
           fi
 
-      - name: Create PR with changes
-        uses: peter-evans/create-pull-request@v7
-        with:
-          commit-message: "docs: add @${{ steps.info.outputs.author }} to contributors"
-          branch: "contributor/${{ steps.info.outputs.author }}"
-          title: "docs: add @${{ steps.info.outputs.author }} to contributors"
-          body: "Automated PR to add contributor @${{ steps.info.outputs.author }} for \`${{ steps.info.outputs.tool }}\`"
-          delete-branch: true
+          # Create PR if there are changes
+          git add README.md
+          git diff --staged --quiet && exit 0
+
+          git commit -m "docs: add @${AUTHOR} to contributors"
+          git push origin "$BRANCH"
+          gh pr create --repo "$REPO" --head "$BRANCH" --base main \
+            --title "docs: add @${AUTHOR} to contributors" \
+            --body "Automated PR to add contributor @${AUTHOR} for \`${TOOL}\`"
