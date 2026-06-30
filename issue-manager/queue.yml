@@ -398,7 +398,7 @@ rounds:
 - title: '[tool] word_frequency'
   description: Returns each word and how many times it appears in a string
   signature: 'run(text: str) -> str'
-  example: word_frequency "the cat sat on the mat" -> "the: 2, cat: 1, sat: 1, on: 1, mat: 1"
+  example: 'word_frequency "the cat sat on the mat" -> "the: 2, cat: 1, sat: 1, on: 1, mat: 1"'
   labels:
   - good first issue
   - help wanted
@@ -551,7 +551,7 @@ rounds:
 - title: '[tool] json_prettify'
   description: Pretty prints a JSON string with indentation
   signature: 'run(json_str: str) -> str'
-  example: json_prettify '{"a":1}' -> '{\n  "a": 1\n}'
+  example: 'json_prettify "{\"a\":1}" -> "{\n  \"a\": 1\n}"'
   labels:
   - good first issue
   - help wanted
@@ -560,7 +560,7 @@ rounds:
 - title: '[tool] json_minify'
   description: Minifies a JSON string by removing whitespace
   signature: 'run(json_str: str) -> str'
-  example: json_minify '{ "a": 1 }' -> '{"a":1}'
+  example: 'json_minify "{ \"a\": 1 }" -> "{\"a\":1}"'
   labels:
   - good first issue
   - help wanted
@@ -785,7 +785,7 @@ rounds:
 - title: '[tool] char_frequency'
   description: Returns the frequency of each character in a string as JSON
   signature: 'run(text: str) -> str'
-  example: char_frequency "hello" -> '{"h": 1, "e": 1, "l": 2, "o": 1}'
+  example: 'char_frequency "hello" -> "{\"h\": 1, \"e\": 1, \"l\": 2, \"o\": 1}"'
   labels:
   - good first issue
   - help wanted
@@ -884,7 +884,7 @@ rounds:
 - title: '[tool] env_parse'
   description: Parses a .env-style string and returns all key=value pairs as JSON
   signature: 'run(env_content: str) -> str'
-  example: env_parse "FOO=bar\nBAZ=qux" -> '{"FOO": "bar", "BAZ": "qux"}'
+  example: 'env_parse "FOO=bar\nBAZ=qux" -> "{\"FOO\": \"bar\", \"BAZ\": \"qux\"}"'
   labels:
   - good first issue
   - help wanted

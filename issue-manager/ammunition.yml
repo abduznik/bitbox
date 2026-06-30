@@ -800,7 +800,7 @@ text_analysis:
 - title: '[tool] char_frequency'
   description: Returns the frequency of each character in a string as JSON
   signature: 'run(text: str) -> str'
-  example: char_frequency "hello" -> '{"h": 1, "e": 1, "l": 2, "o": 1}'
+  example: 'char_frequency "hello" -> "{\"h\": 1, \"e\": 1, \"l\": 2, \"o\": 1}"'
   labels:
   - good first issue
   - help wanted
@@ -901,7 +901,7 @@ data_formats:
 - title: '[tool] env_parse'
   description: Parses a .env-style string and returns all key=value pairs as JSON
   signature: 'run(env_content: str) -> str'
-  example: env_parse "FOO=bar\nBAZ=qux" -> '{"FOO": "bar", "BAZ": "qux"}'
+  example: 'env_parse "FOO=bar\nBAZ=qux" -> "{\"FOO\": \"bar\", \"BAZ\": \"qux\"}"'
   labels:
   - good first issue
   - help wanted
