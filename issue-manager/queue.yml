@@ -142,7 +142,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] absolute'
   description: Returns the absolute value of a number
   signature: 'run(n: str) -> str'
@@ -151,7 +151,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] max_of_two'
   description: Returns the larger of two numbers
   signature: 'run(a: str, b: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 12
-  last_fired: '2026-06-30T17:05:59.877804+00:00'
+  total_fired: 14
+  last_fired: '2026-06-30T18:46:33.644777+00:00'
