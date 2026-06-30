@@ -70,7 +70,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: spent
+  status: pending
 - title: '[tool] count_chars'
   description: Counts the number of characters in a string (excluding spaces)
   signature: 'run(text: str) -> str'
@@ -79,7 +79,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: spent
+  status: pending
 - title: '[tool] is_uppercase'
   description: Checks if a string is all uppercase
   signature: 'run(text: str) -> str'
@@ -88,7 +88,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: spent
+  status: pending
 - title: '[tool] is_lowercase'
   description: Checks if a string is all lowercase
   signature: 'run(text: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 10
-  last_fired: '2026-06-30T10:13:36.172853+00:00'
+  total_fired: 7
+  last_fired: '2026-06-30T10:13:39.348451+00:00'
