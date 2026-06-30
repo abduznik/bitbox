@@ -52,7 +52,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] remove_spaces'
   description: Removes all spaces from a string
   signature: 'run(text: str) -> str'
@@ -61,7 +61,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] reverse_words'
   description: Reverses the order of words in a string
   signature: 'run(text: str) -> str'
@@ -70,7 +70,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] count_chars'
   description: Counts the number of characters in a string (excluding spaces)
   signature: 'run(text: str) -> str'
@@ -79,7 +79,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] is_uppercase'
   description: Checks if a string is all uppercase
   signature: 'run(text: str) -> str'
@@ -88,7 +88,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] is_lowercase'
   description: Checks if a string is all lowercase
   signature: 'run(text: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 5
-  last_fired: '2026-06-30T06:53:11.526352+00:00'
+  total_fired: 10
+  last_fired: '2026-06-30T10:13:36.172853+00:00'
