@@ -205,7 +205,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] km_to_miles'
   description: Converts kilometers to miles
   signature: 'run(km: str) -> str'
@@ -214,7 +214,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] miles_to_km'
   description: Converts miles to kilometers
   signature: 'run(miles: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 19
-  last_fired: '2026-07-01T10:21:35.783312+00:00'
+  total_fired: 21
+  last_fired: '2026-07-01T10:22:07.017841+00:00'
