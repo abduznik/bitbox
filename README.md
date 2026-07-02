@@ -72,6 +72,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@Diyaaa-12](https://github.com/Diyaaa-12) | absolute, is_odd |
 | [@Bruce191](https://github.com/Bruce191) | is_even, swap_case |
 | [@ishita-0301](https://github.com/ishita-0301) | kg_to_lbs, miles_to_km |
+| [@1cbyc](https://github.com/1cbyc) | celsius_to_kelvin, cube, fahrenheit_to_celsius, is_lowercase, keep_vowels, km_to_miles, max_of_two, min_of_two, remove_spaces, remove_vowels, square |
 
 <!-- Contributors are added automatically after PRs are merged -->
 
