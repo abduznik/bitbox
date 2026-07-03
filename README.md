@@ -77,6 +77,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@Rahul6700](https://github.com/Rahul6700) | contains_substring |
 | [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with |
 | [@metric-vac](https://github.com/metric-vac) | replace_char |
+| [@m-kras](https://github.com/m-kras) | ends_with |
 
 <!-- Contributors are added automatically after PRs are merged -->
 
