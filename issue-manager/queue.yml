@@ -385,7 +385,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] levenshtein_distance'
   description: Calculates the edit distance between two strings
   signature: 'run(text1: str, text2: str) -> str'
@@ -394,7 +394,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] word_frequency'
   description: Returns each word and how many times it appears in a string
   signature: 'run(text: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 39
-  last_fired: '2026-07-03T11:28:41.818894+00:00'
+  total_fired: 41
+  last_fired: '2026-07-03T19:37:18.683528+00:00'
