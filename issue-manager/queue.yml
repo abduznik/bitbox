@@ -404,7 +404,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] is_prime'
   description: Checks if a number is prime
   signature: 'run(n: str) -> str'
@@ -413,7 +413,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] clamp'
   description: Clamps a number between a min and max value
   signature: 'run(value: str, min_val: str, max_val: str) -> str'
@@ -422,7 +422,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] percentage'
   description: Calculates what percentage part is of whole
   signature: 'run(part: str, whole: str) -> str'
@@ -431,7 +431,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] fibonacci'
   description: Returns the nth Fibonacci number
   signature: 'run(n: str) -> str'
@@ -440,7 +440,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] roman_to_int'
   description: Converts a Roman numeral string to an integer
   signature: 'run(roman: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 41
-  last_fired: '2026-07-03T19:37:18.683528+00:00'
+  total_fired: 46
+  last_fired: '2026-07-04T10:50:29.686953+00:00'
