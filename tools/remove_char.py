@@ -5,6 +5,16 @@
 
 
 def run(*args) -> str:
-    text = args[0]
-    char = args[1]
+    if len(args) == 1:
+        return str(args[0])
+
+    if len(args) != 2:
+        return "Error: Expected 1 or 2 arguments."
+
+    text = str(args[0])
+    char = str(args[1])
+
+    if len(char) != 1:
+        return "Error: Second argument must be exactly one character."
+        
     return text.replace(char, "")
