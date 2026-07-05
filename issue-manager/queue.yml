@@ -530,7 +530,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] seconds_to_hms'
   description: Converts a number of seconds to h:mm:ss format
   signature: 'run(seconds: str) -> str'
@@ -539,7 +539,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] file_size_human'
   description: Converts a byte count to a human-readable file size
   signature: 'run(bytes: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 55
-  last_fired: '2026-07-05T11:00:06.563236+00:00'
+  total_fired: 57
+  last_fired: '2026-07-05T11:01:31.782145+00:00'
