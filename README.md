@@ -69,7 +69,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@rdhadge](https://github.com/rdhadge) | title_case, repeat_string, base64_encode, base64_decode |
 | [@JingliangGao](https://github.com/JingliangGao) | is_uppercase |
 | [@Julito-Dev](https://github.com/Julito-Dev) | reverse_words |
-| [@Diyaaa-12](https://github.com/Diyaaa-12) | absolute, is_odd |
+| [@Diyaaa-12](https://github.com/Diyaaa-12) | absolute, is_odd, flatten_list, unique_list |
 | [@Bruce191](https://github.com/Bruce191) | is_even, swap_case |
 | [@ishita-0301](https://github.com/ishita-0301) | kg_to_lbs, miles_to_km |
 | [@1cbyc](https://github.com/1cbyc) | celsius_to_kelvin, cube, fahrenheit_to_celsius, is_lowercase, keep_vowels, km_to_miles, max_of_two, min_of_two, remove_spaces, remove_vowels, square |
@@ -79,6 +79,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@metric-vac](https://github.com/metric-vac) | replace_char |
 | [@m-kras](https://github.com/m-kras) | ends_with |
 | [@shivsdev2](https://github.com/shivsdev2) | camel_to_snake |
+| [@VDeepthi11](https://github.com/VDeepthi11) | generate_password |
 
 <!-- Contributors are added automatically after PRs are merged -->
 
