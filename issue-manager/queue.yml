@@ -692,7 +692,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] is_iso_date'
   description: Validates whether a string is a valid ISO 8601 date (YYYY-MM-DD)
   signature: 'run(text: str) -> str'
@@ -701,7 +701,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] is_integer'
   description: Checks whether a string represents a valid integer
   signature: 'run(text: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 73
-  last_fired: '2026-07-07T11:40:44.154974+00:00'
+  total_fired: 75
+  last_fired: '2026-07-07T11:43:04.484152+00:00'
