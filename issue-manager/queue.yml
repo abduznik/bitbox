@@ -728,7 +728,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] sha256_hash'
   description: Computes the SHA-256 hex digest of a string
   signature: 'run(text: str) -> str'
@@ -737,7 +737,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] sha1_hash'
   description: Computes the SHA-1 hex digest of a string
   signature: 'run(text: str) -> str'
@@ -746,7 +746,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] url_encode'
   description: Percent-encodes a string for use in URLs
   signature: 'run(text: str) -> str'
@@ -755,7 +755,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] url_decode'
   description: Decodes a percent-encoded URL string
   signature: 'run(text: str) -> str'
@@ -764,7 +764,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] html_escape'
   description: Escapes HTML special characters (<, >, &, quotes)
   signature: 'run(text: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 77
-  last_fired: '2026-07-07T20:03:35.311301+00:00'
+  total_fired: 82
+  last_fired: '2026-07-08T10:57:10.244029+00:00'
