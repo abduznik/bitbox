@@ -809,7 +809,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] sentence_count'
   description: Counts the number of sentences in text (by . ! ?)
   signature: 'run(text: str) -> str'
@@ -818,7 +818,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] reading_time'
   description: Estimates reading time in minutes (assuming 200 wpm)
   signature: 'run(text: str) -> str'
@@ -827,7 +827,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] line_count'
   description: Counts the number of lines in a string
   signature: 'run(text: str) -> str'
@@ -836,7 +836,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] word_wrap'
   description: Wraps text to a specified maximum line width
   signature: 'run(text: str, width: str) -> str'
@@ -845,7 +845,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] csv_to_json'
   description: Converts CSV text (with header row) to a JSON array of objects
   signature: 'run(csv_text: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 86
-  last_fired: '2026-07-08T19:41:22.254815+00:00'
+  total_fired: 91
+  last_fired: '2026-07-09T11:49:38.378428+00:00'
