@@ -16,5 +16,8 @@ def run(*args) -> str:
         max_val = int(args[1])
     except ValueError:
         return "Error: Arguments must be integers."
+    
+    if min_val > max_val:
+        return "Error: Minimum value cannot be greater than maximum value."
 
     return str(random.randint(min_val, max_val))
