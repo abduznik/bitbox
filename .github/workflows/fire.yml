@@ -1,10 +1,9 @@
-# Issue Fire - fires queued issues twice daily
+# Issue Fire - fires 3 queued issues daily
 name: Issue Fire
 
 on:
   schedule:
     - cron: '0 9 * * *'
-    - cron: '0 18 * * *'
   workflow_dispatch:
 
 jobs:
@@ -31,7 +30,7 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
       - name: Fire issues
-        run: python issue-manager/fire.py --count 2
+        run: python issue-manager/fire.py --count 3
 
       - name: Commit updated queue
         env:

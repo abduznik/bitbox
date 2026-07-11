@@ -1,9 +1,7 @@
-name: Issue Fire
+name: Issue Fire (Manual Only)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 9 * * *'
 
 jobs:
   fire:
