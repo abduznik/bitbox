@@ -8,7 +8,8 @@ import csv
 import json
 import io
 
-def run(csv_text: str) -> str:
+def run(*args) -> str: 
+    csv_text = args[0]
     if not csv_text:
         return "Error: no CSV text given"
     
