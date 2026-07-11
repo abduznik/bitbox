@@ -75,7 +75,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@1cbyc](https://github.com/1cbyc) | celsius_to_kelvin, cube, fahrenheit_to_celsius, is_lowercase, keep_vowels, km_to_miles, max_of_two, min_of_two, remove_spaces, remove_vowels, square |
 | [@yusichen396](https://github.com/yusichen396) | lbs_to_kg |
 | [@Rahul6700](https://github.com/Rahul6700) | contains_substring |
-| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel |
+| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int |
 | [@metric-vac](https://github.com/metric-vac) | replace_char |
 | [@m-kras](https://github.com/m-kras) | ends_with |
 | [@shivsdev2](https://github.com/shivsdev2) | camel_to_snake |
@@ -84,6 +84,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@itsmgxb24](https://github.com/itsmgxb24) | is_ipv4 |
 | [@George4177](https://github.com/George4177) | seconds_to_hms |
 | [@Dhruv-Kapri](https://github.com/Dhruv-Kapri) | multiply, remove_char |
+| [@persianflower](https://github.com/persianflower) | rgb_to_hex |
+| [@PurpleSwtr](https://github.com/PurpleSwtr) | is_uuid, longest_word, shortest_word |
+| [@tmshnko](https://github.com/tmshnko) | file_extension, file_stem |
+| [@isaac-sun](https://github.com/isaac-sun) | path_join, path_basename |
+| [@zaid-brk](https://github.com/zaid-brk) | json_keys |
+| [@AminodinAkbari](https://github.com/AminodinAkbari) | int_to_roman |
 
 <!-- Contributors are added automatically after PRs are merged -->
 
