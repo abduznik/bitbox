@@ -989,7 +989,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] factorial'
   description: Computes the factorial of a non-negative integer
   signature: 'run(n: str) -> str'
@@ -998,7 +998,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] gcd'
   description: Finds the greatest common divisor of two integers
   signature: 'run(a: str, b: str) -> str'
@@ -1007,7 +1007,7 @@ rounds:
   - good first issue
   - help wanted
   - tool request
-  status: pending
+  status: spent
 - title: '[tool] lcm'
   description: Finds the least common multiple of two integers
   signature: 'run(a: str, b: str) -> str'
@@ -1028,5 +1028,5 @@ rounds:
   status: pending
 stats:
   total_loaded: 109
-  total_fired: 106
-  last_fired: '2026-07-11T10:10:55.291845+00:00'
+  total_fired: 109
+  last_fired: '2026-07-12T10:22:19.912796+00:00'
