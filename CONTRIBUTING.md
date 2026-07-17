@@ -10,9 +10,8 @@ Thanks for your interest! bitbox is designed so anyone can contribute a tool in 
 
 ## Which Issues Can I Work On?
 
-- **Issues assigned to you** — you claimed it, it's yours.
-- **Unassigned issues with no open PRs** — first come, first served.
-- **Do NOT work on issues already assigned to someone else**, even if there's no PR yet. Check the assignees before starting.
+- **PRs are first come, first served** — even if an issue is assigned to someone else, if they haven't opened a PR yet, anyone can submit one. Assignment is not exclusive.
+- **Issues are created automatically** — they exist so everyone gets a fair shot at contributing. Please be sporty: don't "steal" an issue someone is actively working on (i.e., already has a PR open), but don't wait around either if there's no activity.
 
 ## File Rules (strict)
 
