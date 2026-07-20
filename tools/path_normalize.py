@@ -3,12 +3,10 @@
 # author: @Solaris-star
 # example: path_normalize "a/b/../c" -> "a/c"
 
-from pathlib import PurePosixPath
+import posixpath
 
 
 def run(*args) -> str:
     if not args:
         return "Error: expected a path argument"
-    # Normalize using POSIX semantics for stable cross-platform tool output
-    return str(PurePosixPath(args[0]))
-
+    return posixpath.normpath(args[0].replace("\\", "/"))
