@@ -1053,7 +1053,28 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] count_palindromes'
+  description: Count palindromic substrings in a string
+  signature: 'run(text: str) -> str'
+  example: count_palindromes "abba" -> "6"
+  labels: &id001
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_mixed_case'
+  description: Check if a string has both upper and lowercase letters
+  signature: 'run(text: str) -> str'
+  example: is_mixed_case "Hello" -> "True"
+  labels: *id001
+  status: spent
+- title: '[tool] compress_whitespace'
+  description: Replace multiple whitespace characters with a single space
+  signature: 'run(text: str) -> str'
+  example: compress_whitespace "hello   world" -> "hello world"
+  labels: *id001
+  status: spent
 stats:
-  total_loaded: 112
-  total_fired: 114
-  last_fired: '2026-07-28T15:29:35.385686+00:00'
+  total_loaded: 115
+  total_fired: 117
+  last_fired: '2026-07-28T17:20:48.109590+00:00'
