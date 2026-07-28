@@ -7,7 +7,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] remove_spaces'
   description: Removes all spaces from a string
   signature: 'run(text: str) -> str'
@@ -16,7 +16,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] reverse_words'
   description: Reverses the order of words in a string
   signature: 'run(text: str) -> str'
@@ -25,7 +25,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] count_chars'
   description: Counts the number of characters in a string (excluding spaces)
   signature: 'run(text: str) -> str'
@@ -305,7 +305,6 @@ basic_tools:
   - help wanted
   - tool request
   fired: false
-
 string_tools:
 - title: '[tool] base64_encode'
   description: Encodes a string to Base64
@@ -582,7 +581,6 @@ utility_tools:
   - help wanted
   - tool request
   fired: false
-
 date_time:
 - title: '[tool] current_timestamp'
   description: Returns the current Unix timestamp in seconds
@@ -656,7 +654,6 @@ date_time:
   - help wanted
   - tool request
   fired: false
-
 validation:
 - title: '[tool] is_email'
   description: Validates whether a string has a basic email format
@@ -730,7 +727,6 @@ validation:
   - help wanted
   - tool request
   fired: false
-
 encoding_hashing:
 - title: '[tool] md5_hash'
   description: Computes the MD5 hex digest of a string
@@ -795,7 +791,6 @@ encoding_hashing:
   - help wanted
   - tool request
   fired: false
-
 text_analysis:
 - title: '[tool] char_frequency'
   description: Returns the frequency of each character in a string as JSON
@@ -860,7 +855,6 @@ text_analysis:
   - help wanted
   - tool request
   fired: false
-
 data_formats:
 - title: '[tool] csv_to_json'
   description: Converts CSV text (with header row) to a JSON array of objects
@@ -907,7 +901,6 @@ data_formats:
   - help wanted
   - tool request
   fired: false
-
 file_path:
 - title: '[tool] file_extension'
   description: Extracts the file extension from a file path
@@ -929,7 +922,7 @@ file_path:
   fired: false
 - title: '[tool] path_join'
   description: Joins multiple path segments into one normalized path
-  signature: 'run(*args) -> str'
+  signature: run(*args) -> str
   example: path_join "/home/user" "docs" "file.txt" -> "/home/user/docs/file.txt"
   labels:
   - good first issue
@@ -963,7 +956,6 @@ file_path:
   - help wanted
   - tool request
   fired: false
-
 conversion:
 - title: '[tool] binary_to_decimal'
   description: Converts a binary string to its decimal integer value
@@ -1010,7 +1002,6 @@ conversion:
   - help wanted
   - tool request
   fired: false
-
 math_extra:
 - title: '[tool] factorial'
   description: Computes the factorial of a non-negative integer
