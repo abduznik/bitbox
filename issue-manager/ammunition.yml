@@ -34,7 +34,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_uppercase'
   description: Checks if a string is all uppercase
   signature: 'run(text: str) -> str'
@@ -43,7 +43,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_lowercase'
   description: Checks if a string is all lowercase
   signature: 'run(text: str) -> str'
@@ -52,7 +52,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] swap_case'
   description: Swaps the case of each character in a string
   signature: 'run(text: str) -> str'
@@ -61,7 +61,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] remove_vowels'
   description: Removes all vowels from a string
   signature: 'run(text: str) -> str'
@@ -70,7 +70,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] keep_vowels'
   description: Keeps only the vowels from a string
   signature: 'run(text: str) -> str'
@@ -79,7 +79,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_even'
   description: Checks if a number is even
   signature: 'run(n: str) -> str'
@@ -88,7 +88,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_odd'
   description: Checks if a number is odd
   signature: 'run(n: str) -> str'
@@ -97,7 +97,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] absolute'
   description: Returns the absolute value of a number
   signature: 'run(n: str) -> str'
@@ -106,7 +106,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] max_of_two'
   description: Returns the larger of two numbers
   signature: 'run(a: str, b: str) -> str'
@@ -115,7 +115,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] min_of_two'
   description: Returns the smaller of two numbers
   signature: 'run(a: str, b: str) -> str'
@@ -124,7 +124,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] square'
   description: Returns the square of a number
   signature: 'run(n: str) -> str'
@@ -133,7 +133,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] cube'
   description: Returns the cube of a number
   signature: 'run(n: str) -> str'
@@ -142,7 +142,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] celsius_to_kelvin'
   description: Converts Celsius to Kelvin
   signature: 'run(celsius: str) -> str'
@@ -151,7 +151,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] fahrenheit_to_celsius'
   description: Converts Fahrenheit to Celsius
   signature: 'run(fahrenheit: str) -> str'
@@ -160,7 +160,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] km_to_miles'
   description: Converts kilometers to miles
   signature: 'run(km: str) -> str'
@@ -169,7 +169,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] miles_to_km'
   description: Converts miles to kilometers
   signature: 'run(miles: str) -> str'
@@ -178,7 +178,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] kg_to_lbs'
   description: Converts kilograms to pounds
   signature: 'run(kg: str) -> str'
@@ -187,7 +187,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] lbs_to_kg'
   description: Converts pounds to kilograms
   signature: 'run(lbs: str) -> str'
@@ -196,7 +196,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] first_char'
   description: Returns the first character of a string
   signature: 'run(text: str) -> str'
@@ -205,7 +205,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] last_char'
   description: Returns the last character of a string
   signature: 'run(text: str) -> str'
@@ -214,7 +214,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] starts_with'
   description: Checks if a string starts with a given prefix
   signature: 'run(text: str, prefix: str) -> str'
@@ -223,7 +223,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] ends_with'
   description: Checks if a string ends with a given suffix
   signature: 'run(text: str, suffix: str) -> str'
@@ -232,7 +232,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] contains_substring'
   description: Checks if a string contains a given substring
   signature: 'run(text: str, substring: str) -> str'
@@ -241,7 +241,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] replace_char'
   description: Replaces all occurrences of a character in a string
   signature: 'run(text: str, old: str, new: str) -> str'
@@ -250,7 +250,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] remove_char'
   description: Removes all occurrences of a character from a string
   signature: 'run(text: str, char: str) -> str'
@@ -259,7 +259,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] multiply'
   description: Multiplies two numbers
   signature: 'run(a: str, b: str) -> str'
@@ -268,7 +268,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] divide'
   description: Divides two numbers
   signature: 'run(a: str, b: str) -> str'
@@ -277,7 +277,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] modulo'
   description: Returns the remainder of dividing two numbers
   signature: 'run(a: str, b: str) -> str'
@@ -286,7 +286,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] power'
   description: Raises a number to a power
   signature: 'run(base: str, exponent: str) -> str'
@@ -295,7 +295,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] random_int'
   description: Generates a random integer between min and max (inclusive)
   signature: 'run(min_val: str, max_val: str) -> str'
@@ -304,7 +304,7 @@ basic_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 string_tools:
 - title: '[tool] base64_encode'
   description: Encodes a string to Base64
@@ -359,7 +359,7 @@ string_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] snake_to_camel'
   description: Converts snake_case to camelCase
   signature: 'run(text: str) -> str'
@@ -368,7 +368,7 @@ string_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] strip_html'
   description: Removes all HTML tags from a string
   signature: 'run(text: str) -> str'
@@ -377,7 +377,7 @@ string_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] caesar_cipher'
   description: Encodes a string using a Caesar cipher shift
   signature: 'run(text: str, shift: str) -> str'
@@ -386,7 +386,7 @@ string_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] levenshtein_distance'
   description: Calculates the edit distance between two strings
   signature: 'run(text1: str, text2: str) -> str'
@@ -395,7 +395,7 @@ string_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] word_frequency'
   description: Returns each word and how many times it appears in a string
   signature: 'run(text: str) -> str'
@@ -405,7 +405,7 @@ string_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 math_tools:
 - title: '[tool] is_prime'
   description: Checks if a number is prime
@@ -415,7 +415,7 @@ math_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] clamp'
   description: Clamps a number between a min and max value
   signature: 'run(value: str, min_val: str, max_val: str) -> str'
@@ -424,7 +424,7 @@ math_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] percentage'
   description: Calculates what percentage part is of whole
   signature: 'run(part: str, whole: str) -> str'
@@ -433,7 +433,7 @@ math_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] fibonacci'
   description: Returns the nth Fibonacci number
   signature: 'run(n: str) -> str'
@@ -442,7 +442,7 @@ math_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] roman_to_int'
   description: Converts a Roman numeral string to an integer
   signature: 'run(roman: str) -> str'
@@ -451,7 +451,7 @@ math_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] int_to_roman'
   description: Converts an integer to a Roman numeral string
   signature: 'run(n: str) -> str'
@@ -460,7 +460,7 @@ math_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 list_tools:
 - title: '[tool] flatten_list'
   description: Flattens a nested list one level deep (JSON input)
@@ -470,7 +470,7 @@ list_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] unique_list'
   description: Removes duplicates from a list while preserving order (JSON input)
   signature: 'run(json_list: str) -> str'
@@ -479,7 +479,7 @@ list_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] chunk_list'
   description: Splits a list into chunks of size n (JSON input)
   signature: 'run(json_list: str, n: str) -> str'
@@ -488,7 +488,7 @@ list_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] rotate_list'
   description: Rotates a list by n positions to the right (JSON input)
   signature: 'run(json_list: str, n: str) -> str'
@@ -497,7 +497,7 @@ list_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] zip_lists'
   description: Zips two lists into a list of pairs (JSON input)
   signature: 'run(list1: str, list2: str) -> str'
@@ -506,7 +506,7 @@ list_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 crypto_tools:
 - title: '[tool] generate_password'
   description: Generates a random password of a given length
@@ -516,7 +516,7 @@ crypto_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] hex_to_rgb'
   description: Converts a hex color code to RGB values
   signature: 'run(hex_color: str) -> str'
@@ -525,7 +525,7 @@ crypto_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] rgb_to_hex'
   description: Converts RGB values to a hex color code
   signature: 'run(r: str, g: str, b: str) -> str'
@@ -534,7 +534,7 @@ crypto_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 utility_tools:
 - title: '[tool] seconds_to_hms'
   description: Converts a number of seconds to h:mm:ss format
@@ -544,7 +544,7 @@ utility_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] file_size_human'
   description: Converts a byte count to a human-readable file size
   signature: 'run(bytes: str) -> str'
@@ -553,7 +553,7 @@ utility_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] json_prettify'
   description: Pretty prints a JSON string with indentation
   signature: 'run(json_str: str) -> str'
@@ -562,7 +562,7 @@ utility_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] json_minify'
   description: Minifies a JSON string by removing whitespace
   signature: 'run(json_str: str) -> str'
@@ -571,7 +571,7 @@ utility_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] generate_uuid'
   description: Generates a random UUID v4 string
   signature: run() -> str
@@ -580,7 +580,7 @@ utility_tools:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 date_time:
 - title: '[tool] current_timestamp'
   description: Returns the current Unix timestamp in seconds
@@ -590,7 +590,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] timestamp_to_date'
   description: Converts a Unix timestamp to a human-readable date string
   signature: 'run(timestamp: str) -> str'
@@ -599,7 +599,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] date_to_timestamp'
   description: Converts a date string (YYYY-MM-DD) to a Unix timestamp
   signature: 'run(date_str: str) -> str'
@@ -608,7 +608,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] days_between'
   description: Calculates the number of days between two dates (YYYY-MM-DD)
   signature: 'run(date1: str, date2: str) -> str'
@@ -617,7 +617,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] current_utc'
   description: Returns the current UTC date and time as an ISO 8601 string
   signature: run() -> str
@@ -626,7 +626,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_leap_year'
   description: Checks whether a given year is a leap year
   signature: 'run(year: str) -> str'
@@ -635,7 +635,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] week_of_year'
   description: Returns the ISO week number (1-53) for a given date
   signature: 'run(date_str: str) -> str'
@@ -644,7 +644,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] day_of_week'
   description: Returns the day of the week for a given date (YYYY-MM-DD)
   signature: 'run(date_str: str) -> str'
@@ -653,7 +653,7 @@ date_time:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 validation:
 - title: '[tool] is_email'
   description: Validates whether a string has a basic email format
@@ -663,7 +663,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_url'
   description: Checks whether a string is a valid HTTP/HTTPS URL
   signature: 'run(text: str) -> str'
@@ -672,7 +672,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_ipv4'
   description: Validates whether a string is a valid IPv4 address
   signature: 'run(text: str) -> str'
@@ -681,7 +681,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_credit_card'
   description: Validates a credit card number using the Luhn algorithm
   signature: 'run(text: str) -> str'
@@ -690,7 +690,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_uuid'
   description: Checks whether a string is a valid UUID format
   signature: 'run(text: str) -> str'
@@ -699,7 +699,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_iso_date'
   description: Validates whether a string is a valid ISO 8601 date (YYYY-MM-DD)
   signature: 'run(text: str) -> str'
@@ -708,7 +708,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_integer'
   description: Checks whether a string represents a valid integer
   signature: 'run(text: str) -> str'
@@ -717,7 +717,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_alphanumeric'
   description: Checks whether a string contains only letters and digits
   signature: 'run(text: str) -> str'
@@ -726,7 +726,7 @@ validation:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 encoding_hashing:
 - title: '[tool] md5_hash'
   description: Computes the MD5 hex digest of a string
@@ -736,7 +736,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] sha256_hash'
   description: Computes the SHA-256 hex digest of a string
   signature: 'run(text: str) -> str'
@@ -745,7 +745,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] sha1_hash'
   description: Computes the SHA-1 hex digest of a string
   signature: 'run(text: str) -> str'
@@ -754,7 +754,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] url_encode'
   description: Percent-encodes a string for use in URLs
   signature: 'run(text: str) -> str'
@@ -763,7 +763,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] url_decode'
   description: Decodes a percent-encoded URL string
   signature: 'run(text: str) -> str'
@@ -772,7 +772,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] html_escape'
   description: Escapes HTML special characters (<, >, &, quotes)
   signature: 'run(text: str) -> str'
@@ -781,7 +781,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] html_unescape'
   description: Converts HTML entities back to their character equivalents
   signature: 'run(text: str) -> str'
@@ -790,7 +790,7 @@ encoding_hashing:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 text_analysis:
 - title: '[tool] char_frequency'
   description: Returns the frequency of each character in a string as JSON
@@ -800,7 +800,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] longest_word'
   description: Finds the longest word in a given text
   signature: 'run(text: str) -> str'
@@ -809,7 +809,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] shortest_word'
   description: Finds the shortest word in a given text
   signature: 'run(text: str) -> str'
@@ -818,7 +818,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] sentence_count'
   description: Counts the number of sentences in text (by . ! ?)
   signature: 'run(text: str) -> str'
@@ -827,7 +827,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] reading_time'
   description: Estimates reading time in minutes (assuming 200 wpm)
   signature: 'run(text: str) -> str'
@@ -836,7 +836,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] line_count'
   description: Counts the number of lines in a string
   signature: 'run(text: str) -> str'
@@ -845,7 +845,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] word_wrap'
   description: Wraps text to a specified maximum line width
   signature: 'run(text: str, width: str) -> str'
@@ -854,7 +854,7 @@ text_analysis:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 data_formats:
 - title: '[tool] csv_to_json'
   description: Converts CSV text (with header row) to a JSON array of objects
@@ -864,7 +864,7 @@ data_formats:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] json_keys'
   description: Lists the top-level keys of a JSON object
   signature: 'run(json_str: str) -> str'
@@ -873,7 +873,7 @@ data_formats:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] xml_escape'
   description: Escapes special characters for XML content
   signature: 'run(text: str) -> str'
@@ -882,7 +882,7 @@ data_formats:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] ini_get'
   description: Parses INI content and returns the value for a section.key
   signature: 'run(ini_content: str, key: str) -> str'
@@ -891,7 +891,7 @@ data_formats:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] env_parse'
   description: Parses a .env-style string and returns all key=value pairs as JSON
   signature: 'run(env_content: str) -> str'
@@ -900,7 +900,7 @@ data_formats:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 file_path:
 - title: '[tool] file_extension'
   description: Extracts the file extension from a file path
@@ -910,7 +910,7 @@ file_path:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] file_stem'
   description: Returns the filename without its extension
   signature: 'run(path: str) -> str'
@@ -919,7 +919,7 @@ file_path:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] path_join'
   description: Joins multiple path segments into one normalized path
   signature: run(*args) -> str
@@ -928,7 +928,7 @@ file_path:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] path_parent'
   description: Returns the parent directory of a given path
   signature: 'run(path: str) -> str'
@@ -937,7 +937,7 @@ file_path:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] path_normalize'
   description: Normalizes a file path (resolves .. and . segments)
   signature: 'run(path: str) -> str'
@@ -946,7 +946,7 @@ file_path:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] path_basename'
   description: Returns the final component of a file path
   signature: 'run(path: str) -> str'
@@ -955,7 +955,7 @@ file_path:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 conversion:
 - title: '[tool] binary_to_decimal'
   description: Converts a binary string to its decimal integer value
@@ -965,7 +965,7 @@ conversion:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] decimal_to_binary'
   description: Converts a decimal integer to its binary string representation
   signature: 'run(n: str) -> str'
@@ -974,7 +974,7 @@ conversion:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] hex_to_decimal'
   description: Converts a hexadecimal string to its decimal integer value
   signature: 'run(hex_str: str) -> str'
@@ -983,7 +983,7 @@ conversion:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] decimal_to_hex'
   description: Converts a decimal integer to its hexadecimal string
   signature: 'run(n: str) -> str'
@@ -992,7 +992,7 @@ conversion:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] octal_to_decimal'
   description: Converts an octal string to its decimal integer value
   signature: 'run(octal: str) -> str'
@@ -1001,7 +1001,7 @@ conversion:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 math_extra:
 - title: '[tool] factorial'
   description: Computes the factorial of a non-negative integer
@@ -1011,7 +1011,7 @@ math_extra:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] gcd'
   description: Finds the greatest common divisor of two integers
   signature: 'run(a: str, b: str) -> str'
@@ -1020,7 +1020,7 @@ math_extra:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] lcm'
   description: Finds the least common multiple of two integers
   signature: 'run(a: str, b: str) -> str'
@@ -1029,7 +1029,7 @@ math_extra:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_perfect_square'
   description: Checks whether a number is a perfect square
   signature: 'run(n: str) -> str'
@@ -1038,4 +1038,4 @@ math_extra:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
