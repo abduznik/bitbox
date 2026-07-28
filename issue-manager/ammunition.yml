@@ -1048,19 +1048,19 @@ string_utils:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_mixed_case'
   description: Check if a string has both upper and lowercase letters
   signature: 'run(text: str) -> str'
   example: is_mixed_case "Hello" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] compress_whitespace'
   description: Replace multiple whitespace characters with a single space
   signature: 'run(text: str) -> str'
   example: compress_whitespace "hello   world" -> "hello world"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] pad_left'
   description: Left-pad a string to a given width with a character
   signature: 'run(text: str, width: str, char: str) -> str'
