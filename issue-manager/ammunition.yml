@@ -1039,3 +1039,312 @@ math_extra:
   - help wanted
   - tool request
   fired: true
+string_utils:
+- title: '[tool] count_palindromes'
+  description: Count palindromic substrings in a string
+  signature: 'run(text: str) -> str'
+  example: count_palindromes "abba" -> "6"
+  labels: &id001
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_mixed_case'
+  description: Check if a string has both upper and lowercase letters
+  signature: 'run(text: str) -> str'
+  example: is_mixed_case "Hello" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] compress_whitespace'
+  description: Replace multiple whitespace characters with a single space
+  signature: 'run(text: str) -> str'
+  example: compress_whitespace "hello   world" -> "hello world"
+  labels: *id001
+  fired: false
+- title: '[tool] pad_left'
+  description: Left-pad a string to a given width with a character
+  signature: 'run(text: str, width: str, char: str) -> str'
+  example: pad_left "42" "5" "0" -> "00042"
+  labels: *id001
+  fired: false
+- title: '[tool] pad_right'
+  description: Right-pad a string to a given width with a character
+  signature: 'run(text: str, width: str, char: str) -> str'
+  example: pad_right "hi" "5" "." -> "hi..."
+  labels: *id001
+  fired: false
+- title: '[tool] count_digits'
+  description: Count the number of digits in a string
+  signature: 'run(text: str) -> str'
+  example: count_digits "abc123" -> "3"
+  labels: *id001
+  fired: false
+- title: '[tool] count_special_chars'
+  description: Count special (non-alphanumeric) characters
+  signature: 'run(text: str) -> str'
+  example: count_special_chars "hello!@#" -> "3"
+  labels: *id001
+  fired: false
+- title: '[tool] extract_digits'
+  description: Extract only digits from a string
+  signature: 'run(text: str) -> str'
+  example: extract_digits "a1b2c3" -> "123"
+  labels: *id001
+  fired: false
+- title: '[tool] extract_letters'
+  description: Extract only letters from a string
+  signature: 'run(text: str) -> str'
+  example: extract_letters "a1b2c3" -> "abc"
+  labels: *id001
+  fired: false
+- title: '[tool] is_numeric'
+  description: Check if a string contains only digits
+  signature: 'run(text: str) -> str'
+  example: is_numeric "12345" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] is_empty_or_whitespace'
+  description: Check if a string is empty or contains only whitespace
+  signature: 'run(text: str) -> str'
+  example: is_empty_or_whitespace "   " -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] truncate_with_ellipsis'
+  description: Truncate string and add ellipsis if shortened
+  signature: 'run(text: str, max_len: str) -> str'
+  example: truncate_with_ellipsis "hello world" "5" -> "hello..."
+  labels: *id001
+  fired: false
+- title: '[tool] wrap_quotes'
+  description: Wrap a string in single or double quotes
+  signature: 'run(text: str, quote_type: str) -> str'
+  example: wrap_quotes hello double -> "hello"
+  labels: *id001
+  fired: false
+- title: '[tool] trim'
+  description: Remove leading and trailing whitespace
+  signature: 'run(text: str) -> str'
+  example: trim "  hello  " -> "hello"
+  labels: *id001
+  fired: false
+- title: '[tool] collapse_whitespace'
+  description: Collapse all whitespace to single spaces and trim
+  signature: 'run(text: str) -> str'
+  example: collapse_whitespace "  hello   world  " -> "hello world"
+  labels: *id001
+  fired: false
+- title: '[tool] repeat_char'
+  description: Repeat a character N times
+  signature: 'run(char: str, n: str) -> str'
+  example: repeat_char "*" "5" -> "*****"
+  labels: *id001
+  fired: false
+- title: '[tool] index_of'
+  description: Find the index of first occurrence of a substring
+  signature: 'run(text: str, sub: str) -> str'
+  example: index_of "hello" "ll" -> "2"
+  labels: *id001
+  fired: false
+- title: '[tool] count_occurrences'
+  description: Count occurrences of a substring in a string
+  signature: 'run(text: str, sub: str) -> str'
+  example: count_occurrences "banana" "a" -> "3"
+  labels: *id001
+  fired: false
+- title: '[tool] is_palindrome_ignore_spaces'
+  description: Check if a string is a palindrome ignoring spaces
+  signature: 'run(text: str) -> str'
+  example: is_palindrome_ignore_spaces "nurses run" -> "True"
+  labels: *id001
+  fired: false
+math_utils:
+- title: '[tool] is_negative'
+  description: Check if a number is negative
+  signature: 'run(n: str) -> str'
+  example: is_negative "-5" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] is_positive'
+  description: Check if a number is positive
+  signature: 'run(n: str) -> str'
+  example: is_positive "5" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] abs_diff'
+  description: Calculate the absolute difference between two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: abs_diff "3" "7" -> "4"
+  labels: *id001
+  fired: false
+- title: '[tool] average'
+  description: Calculate the average of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: average "1,2,3,4,5" -> "3.0"
+  labels: *id001
+  fired: false
+- title: '[tool] sum_list'
+  description: Sum a list of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: sum_list "1,2,3,4,5" -> "15"
+  labels: *id001
+  fired: false
+- title: '[tool] min_of_list'
+  description: Find the minimum in a list of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: min_of_list "3,1,4,1,5" -> "1"
+  labels: *id001
+  fired: false
+- title: '[tool] max_of_list'
+  description: Find the maximum in a list of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: max_of_list "3,1,4,1,5" -> "5"
+  labels: *id001
+  fired: false
+- title: '[tool] round_number'
+  description: Round a number to N decimal places
+  signature: 'run(n: str, places: str) -> str'
+  example: round_number "3.14159" "2" -> "3.14"
+  labels: *id001
+  fired: false
+- title: '[tool] ceil'
+  description: Round a number up to the nearest integer
+  signature: 'run(n: str) -> str'
+  example: ceil "3.2" -> "4"
+  labels: *id001
+  fired: false
+- title: '[tool] floor'
+  description: Round a number down to the nearest integer
+  signature: 'run(n: str) -> str'
+  example: floor "3.8" -> "3"
+  labels: *id001
+  fired: false
+- title: '[tool] is_power_of_two'
+  description: Check if a number is a power of two
+  signature: 'run(n: str) -> str'
+  example: is_power_of_two "8" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] collatz_steps'
+  description: Count steps to reach 1 in the Collatz sequence
+  signature: 'run(n: str) -> str'
+  example: collatz_steps "6" -> "8"
+  labels: *id001
+  fired: false
+- title: '[tool] digit_sum'
+  description: Calculate the sum of digits of a number
+  signature: 'run(n: str) -> str'
+  example: digit_sum "12345" -> "15"
+  labels: *id001
+  fired: false
+- title: '[tool] reverse_number'
+  description: Reverse the digits of a number
+  signature: 'run(n: str) -> str'
+  example: reverse_number "12345" -> "54321"
+  labels: *id001
+  fired: false
+- title: '[tool] is_armstrong'
+  description: Check if a number is an Armstrong number
+  signature: 'run(n: str) -> str'
+  example: is_armstrong "153" -> "True"
+  labels: *id001
+  fired: false
+date_time_utils:
+- title: '[tool] is_weekend'
+  description: Check if a date falls on a weekend
+  signature: 'run(date_str: str) -> str'
+  example: is_weekend "2024-06-29" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] is_past'
+  description: Check if a date is in the past
+  signature: 'run(date_str: str) -> str'
+  example: is_past "2020-01-01" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] add_days'
+  description: Add N days to a date (YYYY-MM-DD)
+  signature: 'run(date_str: str, days: str) -> str'
+  example: add_days "2024-06-30" "10" -> "2024-07-10"
+  labels: *id001
+  fired: false
+- title: '[tool] subtract_days'
+  description: Subtract N days from a date (YYYY-MM-DD)
+  signature: 'run(date_str: str, days: str) -> str'
+  example: subtract_days "2024-07-10" "10" -> "2024-06-30"
+  labels: *id001
+  fired: false
+- title: '[tool] age_calculator'
+  description: Calculate age in years from a birthday (YYYY-MM-DD)
+  signature: 'run(birthday: str) -> str'
+  example: age_calculator "1990-05-15" -> "36"
+  labels: *id001
+  fired: false
+conversion_utils:
+- title: '[tool] degrees_to_radians'
+  description: Convert degrees to radians
+  signature: 'run(degrees: str) -> str'
+  example: degrees_to_radians "180" -> "3.141592653589793"
+  labels: *id001
+  fired: false
+- title: '[tool] radians_to_degrees'
+  description: Convert radians to degrees
+  signature: 'run(radians: str) -> str'
+  example: radians_to_degrees "3.14159" -> "179.9998"
+  labels: *id001
+  fired: false
+- title: '[tool] binary_to_octal'
+  description: Convert a binary string to octal
+  signature: 'run(binary: str) -> str'
+  example: binary_to_octal "1010" -> "12"
+  labels: *id001
+  fired: false
+- title: '[tool] octal_to_binary'
+  description: Convert an octal string to binary
+  signature: 'run(octal: str) -> str'
+  example: octal_to_binary "12" -> "1010"
+  labels: *id001
+  fired: false
+- title: '[tool] meters_to_feet'
+  description: Convert meters to feet
+  signature: 'run(meters: str) -> str'
+  example: meters_to_feet "1" -> "3.28084"
+  labels: *id001
+  fired: false
+validation_utils:
+- title: '[tool] is_hex_color'
+  description: Check if a string is a valid hex color code
+  signature: 'run(text: str) -> str'
+  example: is_hex_color "#ff5733" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] is_port'
+  description: Check if a number is a valid port number (0-65535)
+  signature: 'run(n: str) -> str'
+  example: is_port "8080" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] is_alpha'
+  description: Check if a string contains only letters
+  signature: 'run(text: str) -> str'
+  example: is_alpha "hello" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] has_uppercase'
+  description: Check if a string contains at least one uppercase letter
+  signature: 'run(text: str) -> str'
+  example: has_uppercase "Hello" -> "True"
+  labels: *id001
+  fired: false
+- title: '[tool] has_lowercase'
+  description: Check if a string contains at least one lowercase letter
+  signature: 'run(text: str) -> str'
+  example: has_lowercase "Hello" -> "True"
+  labels: *id001
+  fired: false
+extra_utils:
+- title: '[tool] morse_encode'
+  description: Encode a string to Morse code
+  signature: 'run(text: str) -> str'
+  example: morse_encode "SOS" -> "... --- ..."
+  labels: *id001
+  fired: false
