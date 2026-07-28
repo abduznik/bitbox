@@ -1026,7 +1026,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] repeat_string'
+  description: Repeats a string N times
+  signature: 'run(text: str, n: str) -> str'
+  example: repeat_string "ha" "3" -> "hahaha"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] remove_spaces'
+  description: Removes all spaces from a string
+  signature: 'run(text: str) -> str'
+  example: remove_spaces "hello world" -> "helloworld"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] reverse_words'
+  description: Reverses the order of words in a string
+  signature: 'run(text: str) -> str'
+  example: reverse_words "hello world" -> "world hello"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 109
-  total_fired: 111
-  last_fired: '2026-07-13T11:56:42.033122+00:00'
+  total_loaded: 112
+  total_fired: 114
+  last_fired: '2026-07-28T15:29:35.385686+00:00'
