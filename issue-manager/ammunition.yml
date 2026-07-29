@@ -1066,19 +1066,19 @@ string_utils:
   signature: 'run(text: str, width: str, char: str) -> str'
   example: pad_left "42" "5" "0" -> "00042"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] pad_right'
   description: Right-pad a string to a given width with a character
   signature: 'run(text: str, width: str, char: str) -> str'
   example: pad_right "hi" "5" "." -> "hi..."
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] count_digits'
   description: Count the number of digits in a string
   signature: 'run(text: str) -> str'
   example: count_digits "abc123" -> "3"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] count_special_chars'
   description: Count special (non-alphanumeric) characters
   signature: 'run(text: str) -> str'
