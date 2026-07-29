@@ -4,6 +4,16 @@
 # example: decimal_to_hex "255" -> "ff"
 
 
+# Define a function named 'run' that accepts multiple inputs (*args) and outputs a string (-> str)
 def run(*args) -> str:
-    n = args[0]
-    return hex(int(n))[2:]
+    if not args or args[0] is None:
+        return ""
+
+    try:
+        val = int(float(str(args[0]).strip()))
+    except (ValueError, TypeError):
+        return ""
+
+    if val < 0:
+        return f"-{abs(val):x}"
+    return f"{val:x}"

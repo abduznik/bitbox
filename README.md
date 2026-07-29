@@ -93,4 +93,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@byteofhoney](https://github.com/byteofhoney) | csv_to_json |
 
 <!-- Contributors are added automatically after PRs are merged -->
-
