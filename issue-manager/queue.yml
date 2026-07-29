@@ -1074,7 +1074,28 @@ rounds:
   example: compress_whitespace "hello   world" -> "hello world"
   labels: *id001
   status: spent
+- title: '[tool] pad_left'
+  description: Left-pad a string to a given width with a character
+  signature: 'run(text: str, width: str, char: str) -> str'
+  example: pad_left "42" "5" "0" -> "00042"
+  labels: &id002
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] pad_right'
+  description: Right-pad a string to a given width with a character
+  signature: 'run(text: str, width: str, char: str) -> str'
+  example: pad_right "hi" "5" "." -> "hi..."
+  labels: *id002
+  status: spent
+- title: '[tool] count_digits'
+  description: Count the number of digits in a string
+  signature: 'run(text: str) -> str'
+  example: count_digits "abc123" -> "3"
+  labels: *id002
+  status: spent
 stats:
-  total_loaded: 115
-  total_fired: 117
-  last_fired: '2026-07-28T17:20:48.109590+00:00'
+  total_loaded: 118
+  total_fired: 120
+  last_fired: '2026-07-29T11:20:04.740894+00:00'
