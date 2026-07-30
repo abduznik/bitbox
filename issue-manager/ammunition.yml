@@ -1084,19 +1084,19 @@ string_utils:
   signature: 'run(text: str) -> str'
   example: count_special_chars "hello!@#" -> "3"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] extract_digits'
   description: Extract only digits from a string
   signature: 'run(text: str) -> str'
   example: extract_digits "a1b2c3" -> "123"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] extract_letters'
   description: Extract only letters from a string
   signature: 'run(text: str) -> str'
   example: extract_letters "a1b2c3" -> "abc"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_numeric'
   description: Check if a string contains only digits
   signature: 'run(text: str) -> str'
