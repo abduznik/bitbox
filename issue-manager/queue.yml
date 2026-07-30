@@ -1095,7 +1095,28 @@ rounds:
   example: count_digits "abc123" -> "3"
   labels: *id002
   status: spent
+- title: '[tool] count_special_chars'
+  description: Count special (non-alphanumeric) characters
+  signature: 'run(text: str) -> str'
+  example: count_special_chars "hello!@#" -> "3"
+  labels: &id003
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] extract_digits'
+  description: Extract only digits from a string
+  signature: 'run(text: str) -> str'
+  example: extract_digits "a1b2c3" -> "123"
+  labels: *id003
+  status: spent
+- title: '[tool] extract_letters'
+  description: Extract only letters from a string
+  signature: 'run(text: str) -> str'
+  example: extract_letters "a1b2c3" -> "abc"
+  labels: *id003
+  status: spent
 stats:
-  total_loaded: 118
-  total_fired: 120
-  last_fired: '2026-07-29T11:20:04.740894+00:00'
+  total_loaded: 121
+  total_fired: 123
+  last_fired: '2026-07-30T11:02:37.567099+00:00'
