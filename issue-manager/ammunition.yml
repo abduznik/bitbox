@@ -1102,19 +1102,19 @@ string_utils:
   signature: 'run(text: str) -> str'
   example: is_numeric "12345" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_empty_or_whitespace'
   description: Check if a string is empty or contains only whitespace
   signature: 'run(text: str) -> str'
   example: is_empty_or_whitespace "   " -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] truncate_with_ellipsis'
   description: Truncate string and add ellipsis if shortened
   signature: 'run(text: str, max_len: str) -> str'
   example: truncate_with_ellipsis "hello world" "5" -> "hello..."
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] wrap_quotes'
   description: Wrap a string in single or double quotes
   signature: 'run(text: str, quote_type: str) -> str'
