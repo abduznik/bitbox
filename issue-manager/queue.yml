@@ -1116,7 +1116,28 @@ rounds:
   example: extract_letters "a1b2c3" -> "abc"
   labels: *id003
   status: spent
+- title: '[tool] is_numeric'
+  description: Check if a string contains only digits
+  signature: 'run(text: str) -> str'
+  example: is_numeric "12345" -> "True"
+  labels: &id004
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_empty_or_whitespace'
+  description: Check if a string is empty or contains only whitespace
+  signature: 'run(text: str) -> str'
+  example: is_empty_or_whitespace "   " -> "True"
+  labels: *id004
+  status: spent
+- title: '[tool] truncate_with_ellipsis'
+  description: Truncate string and add ellipsis if shortened
+  signature: 'run(text: str, max_len: str) -> str'
+  example: truncate_with_ellipsis "hello world" "5" -> "hello..."
+  labels: *id004
+  status: spent
 stats:
-  total_loaded: 121
-  total_fired: 123
-  last_fired: '2026-07-30T11:02:37.567099+00:00'
+  total_loaded: 124
+  total_fired: 126
+  last_fired: '2026-07-31T11:25:41.620460+00:00'
