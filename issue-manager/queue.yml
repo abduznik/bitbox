@@ -1137,7 +1137,28 @@ rounds:
   example: truncate_with_ellipsis "hello world" "5" -> "hello..."
   labels: *id004
   status: spent
+- title: '[tool] wrap_quotes'
+  description: Wrap a string in single or double quotes
+  signature: 'run(text: str, quote_type: str) -> str'
+  example: wrap_quotes hello double -> "hello"
+  labels: &id005
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] trim'
+  description: Remove leading and trailing whitespace
+  signature: 'run(text: str) -> str'
+  example: trim "  hello  " -> "hello"
+  labels: *id005
+  status: spent
+- title: '[tool] collapse_whitespace'
+  description: Collapse all whitespace to single spaces and trim
+  signature: 'run(text: str) -> str'
+  example: collapse_whitespace "  hello   world  " -> "hello world"
+  labels: *id005
+  status: spent
 stats:
-  total_loaded: 124
-  total_fired: 126
-  last_fired: '2026-07-31T11:25:41.620460+00:00'
+  total_loaded: 127
+  total_fired: 129
+  last_fired: '2026-08-01T10:37:03.999909+00:00'
