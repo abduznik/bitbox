@@ -1120,19 +1120,19 @@ string_utils:
   signature: 'run(text: str, quote_type: str) -> str'
   example: wrap_quotes hello double -> "hello"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] trim'
   description: Remove leading and trailing whitespace
   signature: 'run(text: str) -> str'
   example: trim "  hello  " -> "hello"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] collapse_whitespace'
   description: Collapse all whitespace to single spaces and trim
   signature: 'run(text: str) -> str'
   example: collapse_whitespace "  hello   world  " -> "hello world"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] repeat_char'
   description: Repeat a character N times
   signature: 'run(char: str, n: str) -> str'
