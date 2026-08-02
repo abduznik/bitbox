@@ -1138,19 +1138,19 @@ string_utils:
   signature: 'run(char: str, n: str) -> str'
   example: repeat_char "*" "5" -> "*****"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] index_of'
   description: Find the index of first occurrence of a substring
   signature: 'run(text: str, sub: str) -> str'
   example: index_of "hello" "ll" -> "2"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] count_occurrences'
   description: Count occurrences of a substring in a string
   signature: 'run(text: str, sub: str) -> str'
   example: count_occurrences "banana" "a" -> "3"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_palindrome_ignore_spaces'
   description: Check if a string is a palindrome ignoring spaces
   signature: 'run(text: str) -> str'
