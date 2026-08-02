@@ -1158,7 +1158,28 @@ rounds:
   example: collapse_whitespace "  hello   world  " -> "hello world"
   labels: *id005
   status: spent
+- title: '[tool] repeat_char'
+  description: Repeat a character N times
+  signature: 'run(char: str, n: str) -> str'
+  example: repeat_char "*" "5" -> "*****"
+  labels: &id006
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] index_of'
+  description: Find the index of first occurrence of a substring
+  signature: 'run(text: str, sub: str) -> str'
+  example: index_of "hello" "ll" -> "2"
+  labels: *id006
+  status: spent
+- title: '[tool] count_occurrences'
+  description: Count occurrences of a substring in a string
+  signature: 'run(text: str, sub: str) -> str'
+  example: count_occurrences "banana" "a" -> "3"
+  labels: *id006
+  status: spent
 stats:
-  total_loaded: 127
-  total_fired: 129
-  last_fired: '2026-08-01T10:37:03.999909+00:00'
+  total_loaded: 130
+  total_fired: 132
+  last_fired: '2026-08-02T10:29:37.475831+00:00'
