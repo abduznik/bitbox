@@ -1156,20 +1156,20 @@ string_utils:
   signature: 'run(text: str) -> str'
   example: is_palindrome_ignore_spaces "nurses run" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 math_utils:
 - title: '[tool] is_negative'
   description: Check if a number is negative
   signature: 'run(n: str) -> str'
   example: is_negative "-5" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_positive'
   description: Check if a number is positive
   signature: 'run(n: str) -> str'
   example: is_positive "5" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] abs_diff'
   description: Calculate the absolute difference between two numbers
   signature: 'run(a: str, b: str) -> str'
