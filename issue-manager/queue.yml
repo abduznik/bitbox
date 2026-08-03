@@ -1179,7 +1179,28 @@ rounds:
   example: count_occurrences "banana" "a" -> "3"
   labels: *id006
   status: spent
+- title: '[tool] is_palindrome_ignore_spaces'
+  description: Check if a string is a palindrome ignoring spaces
+  signature: 'run(text: str) -> str'
+  example: is_palindrome_ignore_spaces "nurses run" -> "True"
+  labels: &id007
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_negative'
+  description: Check if a number is negative
+  signature: 'run(n: str) -> str'
+  example: is_negative "-5" -> "True"
+  labels: *id007
+  status: spent
+- title: '[tool] is_positive'
+  description: Check if a number is positive
+  signature: 'run(n: str) -> str'
+  example: is_positive "5" -> "True"
+  labels: *id007
+  status: spent
 stats:
-  total_loaded: 130
-  total_fired: 132
-  last_fired: '2026-08-02T10:29:37.475831+00:00'
+  total_loaded: 133
+  total_fired: 135
+  last_fired: '2026-08-03T12:17:12.993057+00:00'
