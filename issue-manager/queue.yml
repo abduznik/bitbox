@@ -1200,7 +1200,28 @@ rounds:
   example: is_positive "5" -> "True"
   labels: *id007
   status: spent
+- title: '[tool] abs_diff'
+  description: Calculate the absolute difference between two numbers
+  signature: 'run(a: str, b: str) -> str'
+  example: abs_diff "3" "7" -> "4"
+  labels: &id008
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] average'
+  description: Calculate the average of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: average "1,2,3,4,5" -> "3.0"
+  labels: *id008
+  status: spent
+- title: '[tool] sum_list'
+  description: Sum a list of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: sum_list "1,2,3,4,5" -> "15"
+  labels: *id008
+  status: spent
 stats:
-  total_loaded: 133
-  total_fired: 135
-  last_fired: '2026-08-03T12:17:12.993057+00:00'
+  total_loaded: 136
+  total_fired: 138
+  last_fired: '2026-08-04T11:19:17.630727+00:00'
