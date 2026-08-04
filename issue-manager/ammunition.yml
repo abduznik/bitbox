@@ -1175,19 +1175,19 @@ math_utils:
   signature: 'run(a: str, b: str) -> str'
   example: abs_diff "3" "7" -> "4"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] average'
   description: Calculate the average of comma-separated numbers
   signature: 'run(nums: str) -> str'
   example: average "1,2,3,4,5" -> "3.0"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] sum_list'
   description: Sum a list of comma-separated numbers
   signature: 'run(nums: str) -> str'
   example: sum_list "1,2,3,4,5" -> "15"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] min_of_list'
   description: Find the minimum in a list of comma-separated numbers
   signature: 'run(nums: str) -> str'
