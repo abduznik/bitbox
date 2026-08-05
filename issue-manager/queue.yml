@@ -1221,7 +1221,28 @@ rounds:
   example: sum_list "1,2,3,4,5" -> "15"
   labels: *id008
   status: spent
+- title: '[tool] min_of_list'
+  description: Find the minimum in a list of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: min_of_list "3,1,4,1,5" -> "1"
+  labels: &id009
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] max_of_list'
+  description: Find the maximum in a list of comma-separated numbers
+  signature: 'run(nums: str) -> str'
+  example: max_of_list "3,1,4,1,5" -> "5"
+  labels: *id009
+  status: spent
+- title: '[tool] round_number'
+  description: Round a number to N decimal places
+  signature: 'run(n: str, places: str) -> str'
+  example: round_number "3.14159" "2" -> "3.14"
+  labels: *id009
+  status: spent
 stats:
-  total_loaded: 136
-  total_fired: 138
-  last_fired: '2026-08-04T11:19:17.630727+00:00'
+  total_loaded: 139
+  total_fired: 141
+  last_fired: '2026-08-05T11:15:53.115330+00:00'
