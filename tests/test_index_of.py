@@ -1,4 +1,3 @@
-import pytest
 from tools.index_of import run
 
 
@@ -20,3 +19,7 @@ def test_index_of_empty_substring():
 
 def test_index_of_full_match():
     assert run("hello", "hello") == "0"
+
+
+def test_index_of_missing_argument():
+    assert run("hello") == "Error: index_of requires text and substring"
