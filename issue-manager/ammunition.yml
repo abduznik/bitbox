@@ -1193,19 +1193,19 @@ math_utils:
   signature: 'run(nums: str) -> str'
   example: min_of_list "3,1,4,1,5" -> "1"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] max_of_list'
   description: Find the maximum in a list of comma-separated numbers
   signature: 'run(nums: str) -> str'
   example: max_of_list "3,1,4,1,5" -> "5"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] round_number'
   description: Round a number to N decimal places
   signature: 'run(n: str, places: str) -> str'
   example: round_number "3.14159" "2" -> "3.14"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] ceil'
   description: Round a number up to the nearest integer
   signature: 'run(n: str) -> str'
