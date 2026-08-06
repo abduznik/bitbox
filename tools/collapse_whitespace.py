@@ -3,7 +3,6 @@
 # author: @isaakchoi
 # example: collapse_whitespace "This   is   a   test." -> "This is a test."
 
-
 def run(*args) -> str:
     
     if len(args) != 1:
