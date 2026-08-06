@@ -1242,7 +1242,28 @@ rounds:
   example: round_number "3.14159" "2" -> "3.14"
   labels: *id009
   status: spent
+- title: '[tool] ceil'
+  description: Round a number up to the nearest integer
+  signature: 'run(n: str) -> str'
+  example: ceil "3.2" -> "4"
+  labels: &id010
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] floor'
+  description: Round a number down to the nearest integer
+  signature: 'run(n: str) -> str'
+  example: floor "3.8" -> "3"
+  labels: *id010
+  status: spent
+- title: '[tool] is_power_of_two'
+  description: Check if a number is a power of two
+  signature: 'run(n: str) -> str'
+  example: is_power_of_two "8" -> "True"
+  labels: *id010
+  status: spent
 stats:
-  total_loaded: 139
-  total_fired: 141
-  last_fired: '2026-08-05T11:15:53.115330+00:00'
+  total_loaded: 142
+  total_fired: 144
+  last_fired: '2026-08-06T11:16:13.330752+00:00'
