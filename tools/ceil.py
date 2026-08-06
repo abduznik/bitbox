@@ -5,6 +5,8 @@
 
 def run(*args) -> str:
 
+    # NOTE - Accurate results rely on the precision of the input number being representable by python floats.
+    
     import math
     
     if len(args) != 1:
