@@ -1211,19 +1211,19 @@ math_utils:
   signature: 'run(n: str) -> str'
   example: ceil "3.2" -> "4"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] floor'
   description: Round a number down to the nearest integer
   signature: 'run(n: str) -> str'
   example: floor "3.8" -> "3"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_power_of_two'
   description: Check if a number is a power of two
   signature: 'run(n: str) -> str'
   example: is_power_of_two "8" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] collatz_steps'
   description: Count steps to reach 1 in the Collatz sequence
   signature: 'run(n: str) -> str'
