@@ -1229,19 +1229,19 @@ math_utils:
   signature: 'run(n: str) -> str'
   example: collatz_steps "6" -> "8"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] digit_sum'
   description: Calculate the sum of digits of a number
   signature: 'run(n: str) -> str'
   example: digit_sum "12345" -> "15"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] reverse_number'
   description: Reverse the digits of a number
   signature: 'run(n: str) -> str'
   example: reverse_number "12345" -> "54321"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_armstrong'
   description: Check if a number is an Armstrong number
   signature: 'run(n: str) -> str'
