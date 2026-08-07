@@ -1263,7 +1263,28 @@ rounds:
   example: is_power_of_two "8" -> "True"
   labels: *id010
   status: spent
+- title: '[tool] collatz_steps'
+  description: Count steps to reach 1 in the Collatz sequence
+  signature: 'run(n: str) -> str'
+  example: collatz_steps "6" -> "8"
+  labels: &id011
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] digit_sum'
+  description: Calculate the sum of digits of a number
+  signature: 'run(n: str) -> str'
+  example: digit_sum "12345" -> "15"
+  labels: *id011
+  status: spent
+- title: '[tool] reverse_number'
+  description: Reverse the digits of a number
+  signature: 'run(n: str) -> str'
+  example: reverse_number "12345" -> "54321"
+  labels: *id011
+  status: spent
 stats:
-  total_loaded: 142
-  total_fired: 144
-  last_fired: '2026-08-06T11:16:13.330752+00:00'
+  total_loaded: 145
+  total_fired: 147
+  last_fired: '2026-08-07T09:55:45.031631+00:00'
