@@ -1284,7 +1284,28 @@ rounds:
   example: reverse_number "12345" -> "54321"
   labels: *id011
   status: spent
+- title: '[tool] is_armstrong'
+  description: Check if a number is an Armstrong number
+  signature: 'run(n: str) -> str'
+  example: is_armstrong "153" -> "True"
+  labels: &id012
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_weekend'
+  description: Check if a date falls on a weekend
+  signature: 'run(date_str: str) -> str'
+  example: is_weekend "2024-06-29" -> "True"
+  labels: *id012
+  status: spent
+- title: '[tool] is_past'
+  description: Check if a date is in the past
+  signature: 'run(date_str: str) -> str'
+  example: is_past "2020-01-01" -> "True"
+  labels: *id012
+  status: spent
 stats:
-  total_loaded: 145
-  total_fired: 147
-  last_fired: '2026-08-07T09:55:45.031631+00:00'
+  total_loaded: 148
+  total_fired: 150
+  last_fired: '2026-08-08T09:32:10.638636+00:00'
