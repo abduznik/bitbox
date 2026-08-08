@@ -1247,20 +1247,20 @@ math_utils:
   signature: 'run(n: str) -> str'
   example: is_armstrong "153" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 date_time_utils:
 - title: '[tool] is_weekend'
   description: Check if a date falls on a weekend
   signature: 'run(date_str: str) -> str'
   example: is_weekend "2024-06-29" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_past'
   description: Check if a date is in the past
   signature: 'run(date_str: str) -> str'
   example: is_past "2020-01-01" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] add_days'
   description: Add N days to a date (YYYY-MM-DD)
   signature: 'run(date_str: str, days: str) -> str'
