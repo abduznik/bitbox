@@ -1,7 +1,7 @@
 # tool: Collatz steps
 # description: A tool which counts the steps to reach the next number in the Collatz sequence
 # author: @LinuxLarper
-# example: example_tool "input" -> "output"
+# example: collatz_steps "6" -> "8"
 
 
 def run(*args) -> str:
