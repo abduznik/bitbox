@@ -1266,19 +1266,19 @@ date_time_utils:
   signature: 'run(date_str: str, days: str) -> str'
   example: add_days "2024-06-30" "10" -> "2024-07-10"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] subtract_days'
   description: Subtract N days from a date (YYYY-MM-DD)
   signature: 'run(date_str: str, days: str) -> str'
   example: subtract_days "2024-07-10" "10" -> "2024-06-30"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] age_calculator'
   description: Calculate age in years from a birthday (YYYY-MM-DD)
   signature: 'run(birthday: str) -> str'
   example: age_calculator "1990-05-15" -> "36"
   labels: *id001
-  fired: false
+  fired: true
 conversion_utils:
 - title: '[tool] degrees_to_radians'
   description: Convert degrees to radians
