@@ -1285,19 +1285,19 @@ conversion_utils:
   signature: 'run(degrees: str) -> str'
   example: degrees_to_radians "180" -> "3.141592653589793"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] radians_to_degrees'
   description: Convert radians to degrees
   signature: 'run(radians: str) -> str'
   example: radians_to_degrees "3.14159" -> "179.9998"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] binary_to_octal'
   description: Convert a binary string to octal
   signature: 'run(binary: str) -> str'
   example: binary_to_octal "1010" -> "12"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] octal_to_binary'
   description: Convert an octal string to binary
   signature: 'run(octal: str) -> str'
