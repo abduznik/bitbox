@@ -1326,7 +1326,28 @@ rounds:
   example: age_calculator "1990-05-15" -> "36"
   labels: *id013
   status: spent
+- title: '[tool] degrees_to_radians'
+  description: Convert degrees to radians
+  signature: 'run(degrees: str) -> str'
+  example: degrees_to_radians "180" -> "3.141592653589793"
+  labels: &id014
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] radians_to_degrees'
+  description: Convert radians to degrees
+  signature: 'run(radians: str) -> str'
+  example: radians_to_degrees "3.14159" -> "179.9998"
+  labels: *id014
+  status: spent
+- title: '[tool] binary_to_octal'
+  description: Convert a binary string to octal
+  signature: 'run(binary: str) -> str'
+  example: binary_to_octal "1010" -> "12"
+  labels: *id014
+  status: spent
 stats:
-  total_loaded: 151
-  total_fired: 153
-  last_fired: '2026-08-09T09:33:11.882875+00:00'
+  total_loaded: 154
+  total_fired: 156
+  last_fired: '2026-08-10T10:12:04.982024+00:00'
