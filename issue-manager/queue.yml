@@ -1347,7 +1347,28 @@ rounds:
   example: binary_to_octal "1010" -> "12"
   labels: *id014
   status: spent
+- title: '[tool] octal_to_binary'
+  description: Convert an octal string to binary
+  signature: 'run(octal: str) -> str'
+  example: octal_to_binary "12" -> "1010"
+  labels: &id015
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] meters_to_feet'
+  description: Convert meters to feet
+  signature: 'run(meters: str) -> str'
+  example: meters_to_feet "1" -> "3.28084"
+  labels: *id015
+  status: spent
+- title: '[tool] is_hex_color'
+  description: Check if a string is a valid hex color code
+  signature: 'run(text: str) -> str'
+  example: is_hex_color "#ff5733" -> "True"
+  labels: *id015
+  status: spent
 stats:
-  total_loaded: 154
-  total_fired: 156
-  last_fired: '2026-08-10T10:12:04.982024+00:00'
+  total_loaded: 157
+  total_fired: 159
+  last_fired: '2026-08-11T09:55:47.862190+00:00'
