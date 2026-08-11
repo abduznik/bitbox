@@ -1303,20 +1303,20 @@ conversion_utils:
   signature: 'run(octal: str) -> str'
   example: octal_to_binary "12" -> "1010"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] meters_to_feet'
   description: Convert meters to feet
   signature: 'run(meters: str) -> str'
   example: meters_to_feet "1" -> "3.28084"
   labels: *id001
-  fired: false
+  fired: true
 validation_utils:
 - title: '[tool] is_hex_color'
   description: Check if a string is a valid hex color code
   signature: 'run(text: str) -> str'
   example: is_hex_color "#ff5733" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_port'
   description: Check if a number is a valid port number (0-65535)
   signature: 'run(n: str) -> str'
