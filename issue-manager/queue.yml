@@ -1368,7 +1368,28 @@ rounds:
   example: is_hex_color "#ff5733" -> "True"
   labels: *id015
   status: spent
+- title: '[tool] is_port'
+  description: Check if a number is a valid port number (0-65535)
+  signature: 'run(n: str) -> str'
+  example: is_port "8080" -> "True"
+  labels: &id016
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_alpha'
+  description: Check if a string contains only letters
+  signature: 'run(text: str) -> str'
+  example: is_alpha "hello" -> "True"
+  labels: *id016
+  status: spent
+- title: '[tool] has_uppercase'
+  description: Check if a string contains at least one uppercase letter
+  signature: 'run(text: str) -> str'
+  example: has_uppercase "Hello" -> "True"
+  labels: *id016
+  status: spent
 stats:
-  total_loaded: 157
-  total_fired: 159
-  last_fired: '2026-08-11T09:55:47.862190+00:00'
+  total_loaded: 160
+  total_fired: 162
+  last_fired: '2026-08-12T09:56:15.410177+00:00'
