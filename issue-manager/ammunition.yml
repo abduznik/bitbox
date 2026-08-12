@@ -1322,19 +1322,19 @@ validation_utils:
   signature: 'run(n: str) -> str'
   example: is_port "8080" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] is_alpha'
   description: Check if a string contains only letters
   signature: 'run(text: str) -> str'
   example: is_alpha "hello" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] has_uppercase'
   description: Check if a string contains at least one uppercase letter
   signature: 'run(text: str) -> str'
   example: has_uppercase "Hello" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 - title: '[tool] has_lowercase'
   description: Check if a string contains at least one lowercase letter
   signature: 'run(text: str) -> str'
