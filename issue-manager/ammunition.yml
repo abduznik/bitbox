@@ -1340,11 +1340,11 @@ validation_utils:
   signature: 'run(text: str) -> str'
   example: has_lowercase "Hello" -> "True"
   labels: *id001
-  fired: false
+  fired: true
 extra_utils:
 - title: '[tool] morse_encode'
   description: Encode a string to Morse code
   signature: 'run(text: str) -> str'
   example: morse_encode "SOS" -> "... --- ..."
   labels: *id001
-  fired: false
+  fired: true
