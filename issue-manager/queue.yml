@@ -1389,7 +1389,22 @@ rounds:
   example: has_uppercase "Hello" -> "True"
   labels: *id016
   status: spent
+- title: '[tool] has_lowercase'
+  description: Check if a string contains at least one lowercase letter
+  signature: 'run(text: str) -> str'
+  example: has_lowercase "Hello" -> "True"
+  labels: &id017
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] morse_encode'
+  description: Encode a string to Morse code
+  signature: 'run(text: str) -> str'
+  example: morse_encode "SOS" -> "... --- ..."
+  labels: *id017
+  status: spent
 stats:
-  total_loaded: 160
-  total_fired: 162
-  last_fired: '2026-08-12T09:56:15.410177+00:00'
+  total_loaded: 162
+  total_fired: 164
+  last_fired: '2026-08-13T09:58:16.996709+00:00'
