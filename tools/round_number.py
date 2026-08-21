@@ -4,5 +4,14 @@
 # example: round_number "3.14159" "2" -> "3.14"
 
 def run(*args) -> str:
-    n, places = args
-    return str(round(float(n), int(places)))
+    if len(args) != 2:
+        return "Error: Please provide exactly two arguments."
+    try:
+        n = float(args[0])
+    except ValueError:
+        return "Error: First argument must be a number."
+    try:
+        places = int(args[1])
+    except ValueError:
+        return "Error: Second argument must be an integer."
+    return str(round(n, places))
