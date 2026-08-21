@@ -6,8 +6,9 @@
 
 
 def run(*args) -> str:
-    # args[0] is the first argument, args[1] is the second, etc.
-    # Example with two args: text = args[0], length = int(args[1])
+    if not args:
+        return "Error: please provide text to encode."
+
     text=args[0].upper()
 
     MORSE = {
@@ -28,4 +29,6 @@ def run(*args) -> str:
     for ch in text:
         if ch in MORSE:
             encoded.append(MORSE[ch])
+        else:
+            return f"Error: unsupported character: {ch}"
     return " ".join(encoded)
