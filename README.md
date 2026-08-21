@@ -81,7 +81,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@1cbyc](https://github.com/1cbyc) | celsius_to_kelvin, cube, fahrenheit_to_celsius, is_lowercase, keep_vowels, km_to_miles, max_of_two, min_of_two, remove_spaces, remove_vowels, square |
 | [@yusichen396](https://github.com/yusichen396) | lbs_to_kg |
 | [@Rahul6700](https://github.com/Rahul6700) | contains_substring |
-| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int, is_integer, sentence_count, day_of_week, gcd, url_decode, is_perfect_square, merge_dicts, is_pangram |
+| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int, is_integer, sentence_count, day_of_week, gcd, url_decode, is_perfect_square, merge_dicts, is_pangram, count_special_chars, count_digits, decimal_to_octal, add_days, is_weekend, is_past, is_armstrong |
 | [@metric-vac](https://github.com/metric-vac) | replace_char |
 | [@m-kras](https://github.com/m-kras) | ends_with |
 | [@shivsdev2](https://github.com/shivsdev2) | camel_to_snake |
@@ -97,7 +97,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@zaid-brk](https://github.com/zaid-brk) | json_keys |
 | [@AminodinAkbari](https://github.com/AminodinAkbari) | int_to_roman |
 | [@byteofhoney](https://github.com/byteofhoney) | csv_to_json |
-| [@Evarline](https://github.com/Evarline) | decimal_to_hex |
+| [@Evarline](https://github.com/Evarline) | decimal_to_hex (incl. float/negative/malformed-input handling) |
 | [@PriyadharshiniRVP](https://github.com/PriyadharshiniRVP) | current_utc |
 | [@shayneww](https://github.com/shayneww) | env_parse |
 | [@selvakanthanjagavan-byte](https://github.com/selvakanthanjagavan-byte) | html_escape, lcm, octal_to_decimal |
@@ -105,6 +105,15 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@Ayush-0918](https://github.com/Ayush-0918) | decimal_to_binary |
 | [@bidisha1005](https://github.com/bidisha1005) | sha256_hash |
 | [@HeaTTap](https://github.com/HeaTTap) | is_happy_number |
+| [@imnaur](https://github.com/imnaur) | is_empty_or_whitespace, is_numeric |
+| [@isaakchoi](https://github.com/isaakchoi) | truncate_with_ellipsis, floor, ceil, is_power_of_two, max_of_list, min_of_list, average, extract_letters, extract_digits, abs_diff, trim, wrap_quotes, pad_right, pad_left, is_negative, is_positive, sum_list |
+| [@Jesulac](https://github.com/Jesulac) | is_palindrome_ignore_spaces |
+| [@0xCrimsonSky](https://github.com/0xCrimsonSky) | count_occurrences |
+| [@AshSgDe29071999](https://github.com/AshSgDe29071999) | repeat_char |
+| [@mmaxjr](https://github.com/mmaxjr) | index_of |
+
+| [@dreamqwq114-del](https://github.com/dreamqwq114-del) | has_lowercase |
+| [@ncmoore55](https://github.com/ncmoore55) | has_uppercase |
+| [@shaurya703](https://github.com/shaurya703) | radians_to_degrees, degrees_to_radians |
 
 <!-- Contributors are added automatically after PRs are merged -->
-
