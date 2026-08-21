@@ -81,7 +81,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@1cbyc](https://github.com/1cbyc) | celsius_to_kelvin, cube, fahrenheit_to_celsius, is_lowercase, keep_vowels, km_to_miles, max_of_two, min_of_two, remove_spaces, remove_vowels, square |
 | [@yusichen396](https://github.com/yusichen396) | lbs_to_kg |
 | [@Rahul6700](https://github.com/Rahul6700) | contains_substring |
-| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int, is_integer, sentence_count, day_of_week, gcd, url_decode, is_perfect_square, merge_dicts, is_pangram, count_special_chars, count_digits, decimal_to_octal |
+| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int, is_integer, sentence_count, day_of_week, gcd, url_decode, is_perfect_square, merge_dicts, is_pangram, count_special_chars, count_digits, decimal_to_octal, add_days, is_weekend, is_past, is_armstrong |
 | [@metric-vac](https://github.com/metric-vac) | replace_char |
 | [@m-kras](https://github.com/m-kras) | ends_with |
 | [@shivsdev2](https://github.com/shivsdev2) | camel_to_snake |
@@ -111,5 +111,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@0xCrimsonSky](https://github.com/0xCrimsonSky) | count_occurrences |
 | [@AshSgDe29071999](https://github.com/AshSgDe29071999) | repeat_char |
 | [@mmaxjr](https://github.com/mmaxjr) | index_of |
+
+| [@dreamqwq114-del](https://github.com/dreamqwq114-del) | has_lowercase |
+| [@ncmoore55](https://github.com/ncmoore55) | has_uppercase |
+| [@shaurya703](https://github.com/shaurya703) | radians_to_degrees, degrees_to_radians |
 
 <!-- Contributors are added automatically after PRs are merged -->
