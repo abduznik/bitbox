@@ -4,5 +4,8 @@
 # example: is_alpha "hello" → "True"
 
 def run(*args) -> str:
-    text = args[0]
-    return str(text.isalpha())
+    try:
+        text = args[0]
+        return str(text.isalpha())
+    except IndexError:
+        return "False"
