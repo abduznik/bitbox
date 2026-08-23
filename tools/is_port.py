@@ -7,5 +7,5 @@ def run(*args) -> str:
     try:
         port = int(args[0])
         return str(0 <= port <= 65535)
-    except ValueError:
+    except (ValueError, IndexError):
         return "False"
