@@ -1,4 +1,4 @@
-# tool: octal_to_decimal
+# tool: octal_to_binary
 # description: Convert an octal string to binary
 # author: @MateiB20
 # example: octal_to_binary "12" -> "1010"
