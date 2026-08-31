@@ -119,5 +119,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@Solanki-Jatin](https://github.com/Solanki-Jatin) | round_number |
 | [@cgkol2005](https://github.com/cgkol2005) | meters_to_feet |
 | [@lingeshg18](https://github.com/lingeshg18) | morse_encode |
+| [@Almond922](https://github.com/Almond922) | is_port, is_alpha |
+| [@aishwarya983](https://github.com/aishwarya983) | age_calculator |
+| [@Killerbrine06](https://github.com/Killerbrine06) | binary_to_octal |
+| [@AashishGupta2007](https://github.com/AashishGupta2007) | digit_sum |
+| [@divyanshsinghtomar-ds](https://github.com/divyanshsinghtomar-ds) | subtract_days |
 
 <!-- Contributors are added automatically after PRs are merged -->
