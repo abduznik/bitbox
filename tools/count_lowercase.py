@@ -1,7 +1,7 @@
-# tool: count_uppercase
+# tool: count_lowercase
 # description: Count the number of lower case letters in a String
 # author: @ShauryaPrakashVerma
-# example: count_uppercase "Hello World" -> "8"
+# example: count_lowercase "Hello World" -> "8"
 
 
 def run(*args) -> str:
