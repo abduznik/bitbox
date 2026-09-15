@@ -1,9 +1,12 @@
 # tool: has_lowercase
-# description: Check if a string contains at least one lowercase letter
-# author: @dreamqwq114-del
-# example: has_lowercase "Hello" -> "True"
+# description: Checks if a string contains at least one lowercase character.
+# author: @1998LJ
+# example: has_lowercase("Hello") returns "True"
 
 
 def run(*args) -> str:
-    text = args[0]
-    return str(any(c.islower() for c in text))
+    if len(args) != 1:
+        return "Error: Please provide exactly one argument."
+
+    val = str(args[0])
+    return str(any(c.islower() for c in val))
