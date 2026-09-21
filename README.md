@@ -133,4 +133,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@HarshRajSinghania](https://github.com/HarshRajSinghania) | digital_root |
 | [@MateiB20](https://github.com/MateiB20) | octal_to_binary, collatz_steps |
 | [@00200200](https://github.com/00200200) | is_twin_prime, variance_of_list, std_dev_of_list, median_of_list, gcd_of_list, lcm_of_list, is_multiple, second_largest, is_sorted, is_hex_color |
+| [@rcpeken](https://github.com/rcpeken) | is_weak_password |
+| [@jaideepkrishna2008-ui](https://github.com/jaideepkrishna2008-ui) | count_odd_numbers |
+
 <!-- Contributors are added automatically after PRs are merged -->
