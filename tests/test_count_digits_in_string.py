@@ -1,7 +1,4 @@
-import os
-import sys
-
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+import pytest
 from tools.count_digits_in_string import run
 
 
@@ -23,3 +20,14 @@ def test_empty():
 
 def test_mixed_symbols():
     assert run("phone: +1 (555) 019-2834") == "11"
+
+
+def test_missing_argument():
+    assert run() == "Error: expected string argument"
+
+
+def test_invalid_types():
+    assert run(12345) == "Error: expected string argument"
+    assert run(None) == "Error: expected string argument"
+    assert run(["123"]) == "Error: expected string argument"
+    assert run(True) == "Error: expected string argument"

@@ -6,7 +6,11 @@
 
 def run(*args) -> str:
     if not args:
-        return "0"
+        return "Error: expected string argument"
+
     text = args[0]
+    if not isinstance(text, str):
+        return "Error: expected string argument"
+
     count = sum(1 for c in text if c.isdigit())
     return str(count)
