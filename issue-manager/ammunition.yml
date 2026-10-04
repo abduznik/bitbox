@@ -1348,3 +1348,383 @@ extra_utils:
   example: morse_encode "SOS" -> "... --- ..."
   labels: *id001
   fired: true
+
+second_wave:
+- title: '[tool] initials'
+  description: First letter of each word in a string
+  signature: 'run(text: str) -> str'
+  example: initials "John Ronald Tolkien" -> "JRT"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_isogram'
+  description: Check if a string has no repeated letters
+  signature: 'run(text: str) -> str'
+  example: is_isogram "aba" -> "False"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] pig_latin'
+  description: Convert words to pig latin
+  signature: 'run(text: str) -> str'
+  example: pig_latin "hello world" -> "ellohay orldway"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] run_length_encode'
+  description: Run-length encode a string
+  signature: 'run(text: str) -> str'
+  example: run_length_encode "aaabb" -> "3a2b"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] leet_speak'
+  description: Convert a string to leet speak
+  signature: 'run(text: str) -> str'
+  example: leet_speak "hello" -> "h3110"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] truncate_middle'
+  description: Truncate a string keeping both ends
+  signature: 'run(text: str, max_len: str) -> str'
+  example: truncate_middle "hello world" "8" -> "hel...ld"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] pad_center'
+  description: Center-pad a string to a width with a character
+  signature: 'run(text: str, width: str, char: str) -> str'
+  example: pad_center "hi" "6" "-" -> "--hi--"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] rotate_string'
+  description: Rotate a string left by n characters
+  signature: 'run(text: str, n: str) -> str'
+  example: rotate_string "abc" "1" -> "bca"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] sort_chars'
+  description: Sort the characters of a string
+  signature: 'run(text: str) -> str'
+  example: sort_chars "cba" -> "abc"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] snake_to_kebab'
+  description: Convert snake_case to kebab-case
+  signature: 'run(text: str) -> str'
+  example: snake_to_kebab "hello_world" -> "hello-world"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] pluralize'
+  description: Pluralize a simple English noun
+  signature: 'run(text: str) -> str'
+  example: pluralize "cat" -> "cats"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] reverse_vowels'
+  description: Reverse only the vowels in a string
+  signature: 'run(text: str) -> str'
+  example: reverse_vowels "hello" -> "holle"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] count_uppercase_words'
+  description: Count words that start with an uppercase letter
+  signature: 'run(text: str) -> str'
+  example: count_uppercase_words "Hello world" -> "1"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] word_lengths'
+  description: Length of each word in a string
+  signature: 'run(text: str) -> str'
+  example: word_lengths "hi there" -> "2,5"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] longest_palindrome'
+  description: Find the longest palindromic substring
+  signature: 'run(text: str) -> str'
+  example: longest_palindrome "forgeeksskeegfor" -> "geeksskeeg"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_rotation'
+  description: Check if one string is a rotation of another
+  signature: 'run(text: str, other: str) -> str'
+  example: is_rotation "abc" "bca" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_valid_parentheses'
+  description: Check if brackets in a string are balanced
+  signature: 'run(text: str) -> str'
+  example: is_valid_parentheses "([])" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_harshad'
+  description: Check if a number is a Harshad number
+  signature: 'run(n: str) -> str'
+  example: is_harshad "18" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_automorphic'
+  description: Check if a number is automorphic
+  signature: 'run(n: str) -> str'
+  example: is_automorphic "25" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_pandigital'
+  description: Check if a string uses each digit 1-n exactly once
+  signature: 'run(text: str) -> str'
+  example: is_pandigital "52134" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] aliquot_sum'
+  description: Sum of the proper divisors of a number
+  signature: 'run(n: str) -> str'
+  example: aliquot_sum "12" -> "16"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_coprime'
+  description: Check if two numbers share no common factor
+  signature: 'run(a: str, b: str) -> str'
+  example: is_coprime "8" "9" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] totient'
+  description: Euler totient of a number
+  signature: 'run(n: str) -> str'
+  example: totient "9" -> "6"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] permutation_count'
+  description: Number of permutations of n taken r
+  signature: 'run(n: str, r: str) -> str'
+  example: permutation_count "5" "3" -> "60"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] combination_count'
+  description: Number of combinations of n taken r
+  signature: 'run(n: str, r: str) -> str'
+  example: combination_count "5" "3" -> "10"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] divisors'
+  description: List all divisors of a number
+  signature: 'run(n: str) -> str'
+  example: divisors "12" -> "1,2,3,4,6,12"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] decimal_to_words'
+  description: Spell out a number in English words
+  signature: 'run(n: str) -> str'
+  example: decimal_to_words "1234" -> "one thousand two hundred thirty-four"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] add_binary'
+  description: Add two binary strings
+  signature: 'run(a: str, b: str) -> str'
+  example: add_binary "1010" "11" -> "1101"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] modpow'
+  description: Modular exponentiation a^b mod m
+  signature: 'run(a: str, b: str, m: str) -> str'
+  example: modpow "3" "4" "5" -> "1"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] fibonacci_sequence'
+  description: First n Fibonacci numbers
+  signature: 'run(n: str) -> str'
+  example: fibonacci_sequence "6" -> "0,1,1,2,3,5"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] collatz_sequence'
+  description: Collatz sequence from n down to 1
+  signature: 'run(n: str) -> str'
+  example: collatz_sequence "6" -> "6,3,10,5,16,8,4,2,1"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] set_difference'
+  description: Elements of one list missing from another
+  signature: 'run(a: str, b: str) -> str'
+  example: set_difference "1,2,3" "2,4" -> "1,3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] symmetric_difference'
+  description: Elements in either list but not both
+  signature: 'run(a: str, b: str) -> str'
+  example: symmetric_difference "1,2" "2,3" -> "1,3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] cumulative_sum'
+  description: Running total of a list of numbers
+  signature: 'run(nums: str) -> str'
+  example: cumulative_sum "1,2,3" -> "1,3,6"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_subset'
+  description: Check if every element of one list is in another
+  signature: 'run(a: str, b: str) -> str'
+  example: is_subset "1,2" "1,2,3" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] count_negative'
+  description: Count negative numbers in a list
+  signature: 'run(nums: str) -> str'
+  example: count_negative "-1,2,-3" -> "2"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] month_name'
+  description: Name of the month for a date
+  signature: 'run(date_str: str) -> str'
+  example: month_name "2026-08-15" -> "August"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] quarter_of_year'
+  description: Calendar quarter for a date
+  signature: 'run(date_str: str) -> str'
+  example: quarter_of_year "2026-08-15" -> "Q3"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] ip_to_int'
+  description: Convert an IPv4 address to an integer
+  signature: 'run(text: str) -> str'
+  example: ip_to_int "192.168.0.1" -> "3232235521"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] mime_from_ext'
+  description: MIME type for a file extension
+  signature: 'run(text: str) -> str'
+  example: mime_from_ext ".png" -> "image/png"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] is_base64'
+  description: Check if a string is valid Base64
+  signature: 'run(text: str) -> str'
+  example: is_base64 "aGVsbG8=" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
+- title: '[tool] hex_to_ascii'
+  description: Decode a hex string to ASCII
+  signature: 'run(text: str) -> str'
+  example: hex_to_ascii "4869" -> "Hi"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  fired: false
