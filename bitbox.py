@@ -74,14 +74,14 @@ def main():
     tool_args = sys.argv[2:]
 
     if tool_name not in tools:
-        print(f"Error: tool '{tool_name}' not found.")
-        print("Run 'python bitbox.py --list' to see available tools.")
+        print(f"Error: tool '{tool_name}' not found.", file=sys.stderr)
+        print("Run 'python bitbox.py --list' to see available tools.", file=sys.stderr)
         sys.exit(1)
 
     module = load_tool(tools[tool_name])
 
     if not hasattr(module, "run") or not callable(module.run):
-        print(f"Error: tool '{tool_name}' does not have a callable run() function.")
+        print(f"Error: tool '{tool_name}' does not have a callable run() function.", file=sys.stderr)
         sys.exit(1)
 
     sig = inspect.signature(module.run)
@@ -89,21 +89,31 @@ def main():
         bound = sig.bind(*tool_args)
     except TypeError:
         params = list(sig.parameters.keys())
-        print(f"Error: tool '{tool_name}' expects {len(params)} argument(s): {', '.join(params)}")
-        print(f"Usage: python bitbox.py {tool_name} {' '.join('<' + p + '>' for p in params)}")
+        print(f"Error: tool '{tool_name}' expects {len(params)} argument(s): {', '.join(params)}", file=sys.stderr)
+        print(f"Usage: python bitbox.py {tool_name} {' '.join('<' + p + '>' for p in params)}", file=sys.stderr)
         sys.exit(1)
 
     try:
         result = module.run(*tool_args)
-        print(result)
     except (IndexError, TypeError):
-        print(f"Error: wrong number of arguments for '{tool_name}'.")
-        print(f"Usage: python bitbox.py {tool_name} <args...>")
-        print(f"Check the tool file for expected arguments: tools/{tool_name}.py")
+        print(f"Error: wrong number of arguments for '{tool_name}'.", file=sys.stderr)
+        print(f"Usage: python bitbox.py {tool_name} <args...>", file=sys.stderr)
+        print(f"Check the tool file for expected arguments: tools/{tool_name}.py", file=sys.stderr)
         sys.exit(1)
     except Exception as e:
-        print(f"Error running tool '{tool_name}': {e}")
+        print(f"Error running tool '{tool_name}': {e}", file=sys.stderr)
         sys.exit(1)
+
+    # Issue #329: tools report failure by returning an "Error: ..." string, which
+    # used to reach stdout with exit 0 and read as success to any caller.
+    # ponytail: string-prefix heuristic — a tool returning literal data that
+    # starts with "Error:" would be misread as a failure; upgrade path is raising
+    # exceptions from tools (the full proposal in #329).
+    if isinstance(result, str) and result.startswith(("Error:", "Error :")):
+        print(result, file=sys.stderr)
+        sys.exit(1)
+
+    print(result)
 
 
 if __name__ == "__main__":
