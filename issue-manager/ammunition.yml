@@ -1348,7 +1348,6 @@ extra_utils:
   example: morse_encode "SOS" -> "... --- ..."
   labels: *id001
   fired: true
-
 second_wave:
 - title: '[tool] initials'
   description: First letter of each word in a string
@@ -1358,7 +1357,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_isogram'
   description: Check if a string has no repeated letters
   signature: 'run(text: str) -> str'
@@ -1367,7 +1366,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] pig_latin'
   description: Convert words to pig latin
   signature: 'run(text: str) -> str'
@@ -1376,7 +1375,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] run_length_encode'
   description: Run-length encode a string
   signature: 'run(text: str) -> str'
