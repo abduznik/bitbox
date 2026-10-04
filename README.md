@@ -51,6 +51,12 @@ python bitbox.py is_palindrome "racecar"
 python bitbox.py --list
 ```
 
+### Exit codes
+
+Success prints the result to stdout and exits `0`. Anything that fails — an
+unknown tool, wrong arguments, or a tool returning an `Error: ...` message —
+is printed to stderr and exits `1`.
+
 ## Available Tools
 
 Run `python bitbox.py --list` to see all tools. Each tool is a single Python file in `tools/`.
@@ -68,7 +74,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 
 | Name | Tool |
 |------|------|
-| [@abduznik](https://github.com/abduznik) | project scaffold, 7 seed tools |
+| [@abduznik](https://github.com/abduznik) | project scaffold, 7 seed tools, collapse_whitespace, goldbach_check, is_deficient, is_kaprekar, is_pronic, is_sociable, nth_prime, pairwise_sum, second_smallest, sum_of_primes, word_frequency_top, celsius_to_fahrenheit, count_words, is_palindrome, ordinal, reverse_string, slugify, truncate |
 | [@AviDhandhania](https://github.com/AviDhandhania) | count_vowels |
 | [@AlexMnrs](https://github.com/AlexMnrs) | is_anagram |
 | [@prakhargaba007](https://github.com/prakhargaba007) | count_chars |
@@ -81,7 +87,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@1cbyc](https://github.com/1cbyc) | celsius_to_kelvin, cube, fahrenheit_to_celsius, is_lowercase, keep_vowels, km_to_miles, max_of_two, min_of_two, remove_spaces, remove_vowels, square |
 | [@yusichen396](https://github.com/yusichen396) | lbs_to_kg |
 | [@Rahul6700](https://github.com/Rahul6700) | contains_substring |
-| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int, is_integer, sentence_count, day_of_week, gcd, url_decode, is_perfect_square, merge_dicts, is_pangram, count_special_chars, count_digits, decimal_to_octal, add_days, is_weekend, is_past, is_armstrong |
+| [@navaneethsankar07](https://github.com/navaneethsankar07) | first_char, last_char, starts_with, snake_to_camel, random_int, is_integer, sentence_count, day_of_week, gcd, url_decode, is_perfect_square, merge_dicts, is_pangram, count_special_chars, count_digits, decimal_to_octal, add_days, is_weekend, is_past, is_armstrong, count_palindromes, count_spaces, generate_random_string, is_mixed_case, mask_email, sort_list, to_lowercase, to_uppercase |
 | [@metric-vac](https://github.com/metric-vac) | replace_char |
 | [@m-kras](https://github.com/m-kras) | ends_with |
 | [@shivsdev2](https://github.com/shivsdev2) | camel_to_snake |
@@ -104,7 +110,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 | [@fazalpsinfo-cmyk](https://github.com/fazalpsinfo-cmyk) | error handling (get_description) |
 | [@Ayush-0918](https://github.com/Ayush-0918) | decimal_to_binary |
 | [@bidisha1005](https://github.com/bidisha1005) | sha256_hash |
-| [@HeaTTap](https://github.com/HeaTTap) | is_happy_number |
+| [@HeaTTap](https://github.com/HeaTTap) | is_happy_number, compress_whitespace |
 | [@imnaur](https://github.com/imnaur) | is_empty_or_whitespace, is_numeric |
 | [@isaakchoi](https://github.com/isaakchoi) | truncate_with_ellipsis, floor, ceil, is_power_of_two, max_of_list, min_of_list, average, extract_letters, extract_digits, abs_diff, trim, wrap_quotes, pad_right, pad_left, is_negative, is_positive, sum_list |
 | [@Jesulac](https://github.com/Jesulac) | is_palindrome_ignore_spaces |
@@ -128,12 +134,16 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines. The short version:
 
 | [@GabrielTrifoni](https://github.com/GabrielTrifoni) | digits_product, char_at |
 | [@fathirramadhan-web](https://github.com/fathirramadhan-web) | intersection_of_lists |
-| [@1998LJ](https://github.com/1998LJ) | count_primes, next_prime, binary_to_hex, hex_to_binary, octal_to_hex, is_perfect_number, product_of_list, average_of_digits, reverse_number, mode_of_list, range_of_list, collatz_length, prime_factors, longest_common_prefix |
+| [@1998LJ](https://github.com/1998LJ) | count_primes, next_prime, binary_to_hex, hex_to_binary, octal_to_hex, is_perfect_number, product_of_list, average_of_digits, reverse_number, mode_of_list, range_of_list, collatz_length, prime_factors, longest_common_prefix, catalan_number, fizzbuzz, flatten_nested, is_all_digits, is_mersenne_prime, is_sophie_germain, is_startswith_digit, ngrams, rot13, shuffled_list, top_n_longest_words, triangular_number, union_of_lists |
 | [@rmanojgowda](https://github.com/rmanojgowda) | is_abundant |
 | [@HarshRajSinghania](https://github.com/HarshRajSinghania) | digital_root |
 | [@MateiB20](https://github.com/MateiB20) | octal_to_binary, collatz_steps |
 | [@00200200](https://github.com/00200200) | is_twin_prime, variance_of_list, std_dev_of_list, median_of_list, gcd_of_list, lcm_of_list, is_multiple, second_largest, is_sorted, is_hex_color |
 | [@rcpeken](https://github.com/rcpeken) | is_weak_password |
-| [@jaideepkrishna2008-ui](https://github.com/jaideepkrishna2008-ui) | count_odd_numbers |
+| [@jaideepkrishna2008-ui](https://github.com/jaideepkrishna2008-ui) | count_odd_numbers, count_digits_in_string |
+
+| [@Solaris-star](https://github.com/Solaris-star) | binary_to_decimal, caesar_cipher, char_frequency, chunk_list, clamp, current_timestamp, date_to_timestamp, days_between, divide, fibonacci, file_size_human, hex_to_rgb, html_unescape, ini_get, is_credit_card, is_email, is_leap_year, is_prime, is_url, json_minify, json_prettify, levenshtein_distance, line_count, md5_hash, modulo, path_normalize, path_parent, percentage, power, roman_to_int, rotate_list, sha1_hash, strip_html, timestamp_to_date, week_of_year, word_frequency, word_wrap, xml_escape, zip_lists |
+| [@sajjadlabx](https://github.com/sajjadlabx) | word_char_ratio |
+| [@DYNOSuprovo](https://github.com/DYNOSuprovo) | character_appearances |
 
 <!-- Contributors are added automatically after PRs are merged -->
