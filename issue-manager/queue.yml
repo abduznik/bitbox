@@ -1404,7 +1404,34 @@ rounds:
   example: morse_encode "SOS" -> "... --- ..."
   labels: *id017
   status: spent
+- title: '[tool] initials'
+  description: First letter of each word in a string
+  signature: 'run(text: str) -> str'
+  example: initials "John Ronald Tolkien" -> "JRT"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_isogram'
+  description: Check if a string has no repeated letters
+  signature: 'run(text: str) -> str'
+  example: is_isogram "aba" -> "False"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] pig_latin'
+  description: Convert words to pig latin
+  signature: 'run(text: str) -> str'
+  example: pig_latin "hello world" -> "ellohay orldway"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 162
-  total_fired: 164
-  last_fired: '2026-08-13T09:58:16.996709+00:00'
+  total_loaded: 165
+  total_fired: 167
+  last_fired: '2026-10-04T14:34:30.449207+00:00'
