@@ -1384,7 +1384,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] leet_speak'
   description: Convert a string to leet speak
   signature: 'run(text: str) -> str'
@@ -1393,7 +1393,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] truncate_middle'
   description: Truncate a string keeping both ends
   signature: 'run(text: str, max_len: str) -> str'
@@ -1402,7 +1402,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] pad_center'
   description: Center-pad a string to a width with a character
   signature: 'run(text: str, width: str, char: str) -> str'
