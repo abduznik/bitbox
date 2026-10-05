@@ -1431,7 +1431,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] run_length_encode'
+  description: Run-length encode a string
+  signature: 'run(text: str) -> str'
+  example: run_length_encode "aaabb" -> "3a2b"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] leet_speak'
+  description: Convert a string to leet speak
+  signature: 'run(text: str) -> str'
+  example: leet_speak "hello" -> "h3110"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] truncate_middle'
+  description: Truncate a string keeping both ends
+  signature: 'run(text: str, max_len: str) -> str'
+  example: truncate_middle "hello world" "8" -> "hel...ld"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 165
-  total_fired: 167
-  last_fired: '2026-10-04T14:34:30.449207+00:00'
+  total_loaded: 168
+  total_fired: 170
+  last_fired: '2026-10-05T17:44:18.700504+00:00'
