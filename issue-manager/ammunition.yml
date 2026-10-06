@@ -1411,7 +1411,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] rotate_string'
   description: Rotate a string left by n characters
   signature: 'run(text: str, n: str) -> str'
@@ -1420,7 +1420,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] sort_chars'
   description: Sort the characters of a string
   signature: 'run(text: str) -> str'
@@ -1429,7 +1429,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] snake_to_kebab'
   description: Convert snake_case to kebab-case
   signature: 'run(text: str) -> str'
