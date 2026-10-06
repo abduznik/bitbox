@@ -1458,7 +1458,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] pad_center'
+  description: Center-pad a string to a width with a character
+  signature: 'run(text: str, width: str, char: str) -> str'
+  example: pad_center "hi" "6" "-" -> "--hi--"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] rotate_string'
+  description: Rotate a string left by n characters
+  signature: 'run(text: str, n: str) -> str'
+  example: rotate_string "abc" "1" -> "bca"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] sort_chars'
+  description: Sort the characters of a string
+  signature: 'run(text: str) -> str'
+  example: sort_chars "cba" -> "abc"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 168
-  total_fired: 170
-  last_fired: '2026-10-05T17:44:18.700504+00:00'
+  total_loaded: 171
+  total_fired: 173
+  last_fired: '2026-10-06T15:38:40.961895+00:00'
