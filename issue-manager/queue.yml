@@ -1485,7 +1485,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] snake_to_kebab'
+  description: Convert snake_case to kebab-case
+  signature: 'run(text: str) -> str'
+  example: snake_to_kebab "hello_world" -> "hello-world"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] pluralize'
+  description: Pluralize a simple English noun
+  signature: 'run(text: str) -> str'
+  example: pluralize "cat" -> "cats"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] reverse_vowels'
+  description: Reverse only the vowels in a string
+  signature: 'run(text: str) -> str'
+  example: reverse_vowels "hello" -> "holle"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 171
-  total_fired: 173
-  last_fired: '2026-10-06T15:38:40.961895+00:00'
+  total_loaded: 174
+  total_fired: 176
+  last_fired: '2026-10-07T16:01:11.944990+00:00'
