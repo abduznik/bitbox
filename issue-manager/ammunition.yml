@@ -1438,7 +1438,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] pluralize'
   description: Pluralize a simple English noun
   signature: 'run(text: str) -> str'
@@ -1447,7 +1447,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] reverse_vowels'
   description: Reverse only the vowels in a string
   signature: 'run(text: str) -> str'
@@ -1456,7 +1456,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] count_uppercase_words'
   description: Count words that start with an uppercase letter
   signature: 'run(text: str) -> str'
