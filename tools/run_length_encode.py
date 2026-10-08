@@ -4,8 +4,10 @@
 # example: run_length_encode "aaaabbc" -> "4a2b1c"; run_length_encode "aaaabbc" -s -> "4a2bc"
 
 def run(*args) -> str:
-    if not args or len(args) > 2:
-        return ""
+    if not args:
+        return "Error: Please introduce a String"
+    if len(args) >2:
+        return "Error: Too many arguments. Only valid tag after a String is '-s' for shortened version"
     input_string = args[0]
     short_flag = args[1] if len(args) == 2 else None
     encoded_string = []
