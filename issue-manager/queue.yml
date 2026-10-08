@@ -1512,7 +1512,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] count_uppercase_words'
+  description: Count words that start with an uppercase letter
+  signature: 'run(text: str) -> str'
+  example: count_uppercase_words "Hello world" -> "1"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] word_lengths'
+  description: Length of each word in a string
+  signature: 'run(text: str) -> str'
+  example: word_lengths "hi there" -> "2,5"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] longest_palindrome'
+  description: Find the longest palindromic substring
+  signature: 'run(text: str) -> str'
+  example: longest_palindrome "forgeeksskeegfor" -> "geeksskeeg"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 174
-  total_fired: 176
-  last_fired: '2026-10-07T16:01:11.944990+00:00'
+  total_loaded: 177
+  total_fired: 179
+  last_fired: '2026-10-08T16:03:31.982601+00:00'
