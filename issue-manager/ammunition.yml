@@ -1465,7 +1465,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] word_lengths'
   description: Length of each word in a string
   signature: 'run(text: str) -> str'
@@ -1474,7 +1474,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] longest_palindrome'
   description: Find the longest palindromic substring
   signature: 'run(text: str) -> str'
@@ -1483,7 +1483,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_rotation'
   description: Check if one string is a rotation of another
   signature: 'run(text: str, other: str) -> str'
