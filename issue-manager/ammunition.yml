@@ -1492,7 +1492,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_valid_parentheses'
   description: Check if brackets in a string are balanced
   signature: 'run(text: str) -> str'
@@ -1501,7 +1501,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_harshad'
   description: Check if a number is a Harshad number
   signature: 'run(n: str) -> str'
@@ -1510,7 +1510,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_automorphic'
   description: Check if a number is automorphic
   signature: 'run(n: str) -> str'
