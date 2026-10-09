@@ -9,6 +9,11 @@ def run(*args) -> str:
     if len(args) >2:
         return "Error: Too many arguments. Only valid tag after a String is '-s' for shortened version"
     input_string = args[0]
+    if not isinstance(input_string, str):
+        return "Error: Input must be a string"
+
+    if input_string == "":
+        return "Error: Input string cannot be empty"
     short_flag = args[1] if len(args) == 2 else None
     encoded_string = []
     count = 1
