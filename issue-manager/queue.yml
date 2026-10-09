@@ -1539,7 +1539,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] is_rotation'
+  description: Check if one string is a rotation of another
+  signature: 'run(text: str, other: str) -> str'
+  example: is_rotation "abc" "bca" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_valid_parentheses'
+  description: Check if brackets in a string are balanced
+  signature: 'run(text: str) -> str'
+  example: is_valid_parentheses "([])" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_harshad'
+  description: Check if a number is a Harshad number
+  signature: 'run(n: str) -> str'
+  example: is_harshad "18" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 177
-  total_fired: 179
-  last_fired: '2026-10-08T16:03:31.982601+00:00'
+  total_loaded: 180
+  total_fired: 182
+  last_fired: '2026-10-09T15:45:27.137211+00:00'
