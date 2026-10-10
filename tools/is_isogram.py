@@ -9,4 +9,6 @@ def run(*args) -> str:
         return "Error: Please provide exactly one argument."
 
     text = args[0]
-    return str(len(set(text)) == len(text))
+    letters = [char.lower() for char in text if char.isalpha()]
+
+    return str(len(letters) == len(set(letters)))
