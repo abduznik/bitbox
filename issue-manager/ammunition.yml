@@ -1519,7 +1519,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_pandigital'
   description: Check if a string uses each digit 1-n exactly once
   signature: 'run(text: str) -> str'
@@ -1528,7 +1528,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] aliquot_sum'
   description: Sum of the proper divisors of a number
   signature: 'run(n: str) -> str'
@@ -1537,7 +1537,7 @@ second_wave:
   - good first issue
   - help wanted
   - tool request
-  fired: false
+  fired: true
 - title: '[tool] is_coprime'
   description: Check if two numbers share no common factor
   signature: 'run(a: str, b: str) -> str'
