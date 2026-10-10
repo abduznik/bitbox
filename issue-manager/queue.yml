@@ -1566,7 +1566,34 @@ rounds:
   - help wanted
   - tool request
   status: spent
+- title: '[tool] is_automorphic'
+  description: Check if a number is automorphic
+  signature: 'run(n: str) -> str'
+  example: is_automorphic "25" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] is_pandigital'
+  description: Check if a string uses each digit 1-n exactly once
+  signature: 'run(text: str) -> str'
+  example: is_pandigital "52134" -> "True"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
+- title: '[tool] aliquot_sum'
+  description: Sum of the proper divisors of a number
+  signature: 'run(n: str) -> str'
+  example: aliquot_sum "12" -> "16"
+  labels:
+  - good first issue
+  - help wanted
+  - tool request
+  status: spent
 stats:
-  total_loaded: 180
-  total_fired: 182
-  last_fired: '2026-10-09T15:45:27.137211+00:00'
+  total_loaded: 183
+  total_fired: 185
+  last_fired: '2026-10-10T14:58:06.798531+00:00'
