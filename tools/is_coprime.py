@@ -9,6 +9,6 @@ def run(a: str, b: str) -> str:
         num_a = int(a)
         num_b = int(b)
     except (ValueError, TypeError):
-        return "Both arguments must be integers"
+        return "Error: Both arguments must be integers"
 
     return str(math.gcd(num_a, num_b) == 1)
