@@ -26,4 +26,4 @@ def test_is_coprime(a, b, expected):
 
 def test_invalid_input_returns_error(a, b):
   result = run(a, b)
-  assert result.startswith("Error:)
+  assert result.startswith("Error:")
