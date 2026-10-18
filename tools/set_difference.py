@@ -1,4 +1,4 @@
-﻿# tool: set_difference
+# tool: set_difference
 # description: Find elements in the first list that are absent from the second list
 # author: @pardhusriparupudi
 # example: set_difference "1,2,3" "2,4" -> "1,3"
